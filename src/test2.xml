@@ -1,0 +1,106 @@
+<Assets>
+ <asset name="Virtual Dvaered Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Empire Small">
+  <virtual/>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Empire Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Empire</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual FLF Small">
+  <virtual/>
+  <presence>
+   <faction>FLF</faction>
+   <value>80.000000</value>
+   <range>1</range>
+  </presence>
+ </asset>
+ <asset name="Virtual FLF Unpresence">
+  <virtual/>
+  <presence>
+   <faction>FLF</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Frontier Small">
+  <virtual/>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Frontier Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Frontier</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Medium">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>150.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Small">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>100.000000</value>
+   <range>3</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Proteron Small">
+  <virtual/>
+  <presence>
+   <faction>Proteron</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Proteron Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Proteron</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Sirius Small">
+  <virtual/>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+</Assets>

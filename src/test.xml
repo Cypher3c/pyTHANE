@@ -1,0 +1,5199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Assets>
+ <asset name="Adham">
+  <pos>
+   <x>27913.769923</x>
+   <y>5174.627773</y>
+  </pos>
+  <GFX>
+   <space>P03.png</space>
+   <exterior>snow.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>P</class>
+   <population>100</population>
+   <services>
+    <land/>
+    <refuel/>
+   </services>
+   <commodities/>
+   <description>Adham is a cold, lifeless planet. The only reason why there is a landing strip here at all is that the planet hosts the three arctic-themed arenas for Totoran's gladiatiorial games. While the landing zone and a small buffer around it is considered neutral territory, most of the planet's surface is subject to the destructive sport that is so popular among Totoran's visitors.</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Adrian">
+  <pos>
+   <x>-179.477707</x>
+   <y>5286.959359</y>
+  </pos>
+  <GFX>
+   <space>P04.png</space>
+   <exterior>snow.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>P</class>
+   <population>4000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+   </services>
+   <commodities/>
+   <description>A cold and unpleasant world, the Sirius established their colony on Adrian in the days when they were just expanding into Eiderdown. At the time the system was controlled by the Empire, but with a firm beachhead in the system it was a matter of a few cycles before the Sirii came to power. Today, Adrian persists, despite having served its only purpose.</description>
+   <bar>Heating on P class worlds is often a costly affair, so the temperature is kept at an acceptable, though uncomfortable low. Most patrons of this spaceport bar are in full winter getups.</bar>
+  </general>
+ </asset>
+ <asset name="Andee IIa">
+  <pos>
+   <x>-17730.525819</x>
+   <y>343.637937</y>
+  </pos>
+  <GFX>
+   <space>moon-H02.png</space>
+   <exterior>mining2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Anecu">
+  <pos>
+   <x>-30000.000000</x>
+   <y>-10800.000000</y>
+  </pos>
+  <GFX>
+   <space>O00.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>O</class>
+   <population>70000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Anecu is a completely aquatic planet. Its surface is covered completely by water. In the shallow areas great underwater cities are constructed, as the climate above the water can be very harsh (waves been recorded to be up to 2 kilometres high). The planet boasts extensive ship-designing facilities, using the high-pressure of the water as a benchmark against which ships are measured.</description>
+   <bar>The spaceport bar is approximately 3 kilometres below the surface of the planet. The walls are constructed from a hardened, transparent polymer that allows you to see into the darkness of the water. Every so often you can see gelatinous creatures sliding around, barely illuminated by the bar lighting.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+  </tech>
+ </asset>
+ <asset name="Anifta">
+  <pos>
+   <x>2190.000000</x>
+   <y>5450.000000</y>
+  </pos>
+  <GFX>
+   <space>G02.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fidelis IV">
+  <pos>
+   <x>15115.790698</x>
+   <y>-12230.952288</y>
+  </pos>
+  <GFX>
+   <space>moon-D00.png</space>
+   <exterior>station02.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Flach">
+  <pos>
+   <x>28300.000000</x>
+   <y>-2650.000000</y>
+  </pos>
+  <GFX>
+   <space>Y00.png</space>
+   <exterior>mining2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Folevo">
+  <pos>
+   <x>-30202.482562</x>
+   <y>-19224.091941</y>
+  </pos>
+  <GFX>
+   <space>moon-A01.png</space>
+   <exterior>snow.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Forge">
+  <pos>
+   <x>1100.000000</x>
+   <y>-18950.000000</y>
+  </pos>
+  <GFX>
+   <space>A00.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fort Sirius">
+  <pos>
+   <x>16942.631753</x>
+   <y>-6095.098630</y>
+  </pos>
+  <GFX>
+   <space>000.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>10000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Fort Sirius is the primary military hub of the Sirius army. It serves as the gatekeeper for Aesir, making sure no threats will ever reach Mutris. The station has hundreds of hangars in all sizes, allowing a full contigent to be stationed and ready at all times.</description>
+   <bar>(null)</bar>
+  </general>
+  <tech>
+   <item>Sirius Military Ships</item>
+   <item>High Tech Upgrades 2</item>
+   <item>Heavy Weapons 1</item>
+  </tech>
+ </asset>
+ <asset name="Fortitude I">
+  <pos>
+   <x>-3973.895332</x>
+   <y>-4159.591375</y>
+  </pos>
+  <GFX>
+   <space>A01.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fortitude II">
+  <pos>
+   <x>5694.944255</x>
+   <y>9618.349768</y>
+  </pos>
+  <GFX>
+   <space>J02.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fortitude III">
+  <pos>
+   <x>6021.653926</x>
+   <y>-12361.377812</y>
+  </pos>
+  <GFX>
+   <space>P04.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Freshwater Station">
+  <pos>
+   <x>-13589.830053</x>
+   <y>11789.469068</y>
+  </pos>
+  <GFX>
+   <space>station-agriculture.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>200</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>After the success of the Empire's experimental INNS-1, the Sirii saw potential for off-world crop growing in the Anarbalis system. Aptly named, Freshwater Station produces carefully engineered bumper crops for consumption by Sirian worlds in the immediate vicinity.</description>
+   <bar>The bar is dominated by the likeness of the Touched who officially blessed the station. The local Sirian workers seem to take particular pride in the visit, since the Touched usually operate only in population centers.</bar>
+  </general>
+ </asset>
+ <asset name="Fried I">
+  <pos>
+   <x>-12500.000000</x>
+   <y>2100.000000</y>
+  </pos>
+  <GFX>
+   <space>Y00.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fried II">
+  <pos>
+   <x>-8895.688943</x>
+   <y>-12416.732467</y>
+  </pos>
+  <GFX>
+   <space>S00.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fried III">
+  <pos>
+   <x>12505.292605</x>
+   <y>2285.984224</y>
+  </pos>
+  <GFX>
+   <space>I01.png</space>
+   <exterior>station05.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fried IIIa">
+  <pos>
+   <x>13000.000000</x>
+   <y>2550.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-H01.png</space>
+   <exterior>mining3.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fried Ia">
+  <pos>
+   <x>-12094.025264</x>
+   <y>1795.654737</y>
+  </pos>
+  <GFX>
+   <space>moon-P01.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fury I">
+  <pos>
+   <x>-6350.000000</x>
+   <y>500.000000</y>
+  </pos>
+  <GFX>
+   <space>G00.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Fuzka">
+  <pos>
+   <x>-13133.181669</x>
+   <y>-5107.348427</y>
+  </pos>
+  <GFX>
+   <space>M02.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>400000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Luxury Goods</commodity>
+   </commodities>
+   <description>Fuzka is a fairly typical Imperial civilian world. It has a good atmosphere, stable tectonics and a large population. The world grows most of its own food, but still needs imports to make ends meet. The local population is as well off as can be expected from a middle-class Imperial colony. Otherwise, there is little to note about Fuzka.</description>
+   <bar>The bar caters to its clientele with considerable efficiency. Since Fuzka has quite a high amount of civilian traffic, its bar needs to handle the many passengers who are waiting for their transport to depart.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+   <item>Basic Civilian Ships</item>
+   <item>Light Civilian Combat Ships</item>
+  </tech>
+ </asset>
+ <asset name="Fyruse Station">
+  <pos>
+   <x>3795.124991</x>
+   <y>8868.896979</y>
+  </pos>
+  <GFX>
+   <space>station-fleetbase.png</space>
+   <exterior>station05.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+   </services>
+   <commodities/>
+   <description>The Sirii have a rather extensive military infrastructure within their borders, and Fyruse Station is part of that infrastructure. There's a regular detachment stationed here, making sure that law and order are maintained as well as can reasonably be expected in Esker and its neighboring systems. Fyruse Station also acts as a border guard for Frontier space, though nobody really believes in the need for such.</description>
+   <bar>As Fyruse Station is a Sirius-only facility, the bar is divided in three sections, one for each echelon. In the rare event that a non-Sirius visitor is allowed on board, they will be catered for in the Shaira section.</bar>
+  </general>
+ </asset>
+ <asset name="Gamma">
+  <pos>
+   <x>-2310.000000</x>
+   <y>-11760.000000</y>
+  </pos>
+  <GFX>
+   <space>A03.png</space>
+   <exterior>mining4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gammacron IV">
+  <pos>
+   <x>1200.000000</x>
+   <y>4032.000000</y>
+  </pos>
+  <GFX>
+   <space>K00.png</space>
+   <exterior>desertic4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gammacron V">
+  <pos>
+   <x>17964.422940</x>
+   <y>9988.554651</y>
+  </pos>
+  <GFX>
+   <space>J00.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gammacron Va">
+  <pos>
+   <x>18474.585201</x>
+   <y>10021.170402</y>
+  </pos>
+  <GFX>
+   <space>moon-J02.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gammacron Vb">
+  <pos>
+   <x>18823.239218</x>
+   <y>9932.323873</y>
+  </pos>
+  <GFX>
+   <space>moon-J01.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gaula">
+  <pos>
+   <x>19668.000000</x>
+   <y>-12100.000000</y>
+  </pos>
+  <GFX>
+   <space>O00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gayathi">
+  <pos>
+   <x>29970.000000</x>
+   <y>-28268.000000</y>
+  </pos>
+  <GFX>
+   <space>O02.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>O</class>
+   <population>1000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>The colony on Gayathi has been around since before Sirichana settled on Mutris. In those days it was an outpost of one of the Factions that were destroyed in the Faction Wars, forgotten and overlooked by all. With its source of funding and supplies gone, Gayathi never had a chance to fully develop its economic infrastructure. Then, when Sirius rose as a galactic power, Gayathi came to fall under its influence. Now it is home to some of the most devout believers found in Sirius space.</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gem">
+  <pos>
+   <x>-2316.897947</x>
+   <y>-3385.866684</y>
+  </pos>
+  <GFX>
+   <space>moon-P02.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Geron">
+  <pos>
+   <x>2938.557652</x>
+   <y>11505.793602</y>
+  </pos>
+  <GFX>
+   <space>M06.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Goddard</faction>
+   <value>100.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>6000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Medicine</commodity>
+   </commodities>
+   <description>Geron was once an Imperial colony, but when House Goddard was established and granted full authority over the system, it also acquired jurisdiction over Geron. In the decades that followed the Imperial bureaucracy was largely dismantled and replaced by a more governorial arrangement. That improved the efficiency at which the world was run, but without its Imperial status the economy took a serious hit. Nowadays, Geron is a fairly average civilian world that houses the majority of Goddard's citizens.</description>
+   <bar>Like many spaceport bars, this one is loud, crowded and a little smelly. In other words, it's a home away from home for those who make their living in space.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Gilligan's Light III">
+  <pos>
+   <x>-7036.538612</x>
+   <y>-6116.121552</y>
+  </pos>
+  <GFX>
+   <space>I01.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gilligan's Memory">
+  <pos>
+   <x>2560.000000</x>
+   <y>-6640.000000</y>
+  </pos>
+  <GFX>
+   <space>M00.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>H</class>
+   <population>3000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Wilibrord Gilligan was a famous explorer of space in the times of the Second Growth. He is responsible for charting many of the currently known jump routes, having a knack for spotting the areas in space that allowed entry into hyperspace for prolonged periods. In those days this was exceptional, since scanning technology was nowhere near as advanced as now. In honor of Gilligan's services to the old Factions, he was granted his own star system and settlement therein. After the Faction Wars, Gilligan's Memory came to fall under Sirian rule, though the Sirii have chosen to uphold Gilligan's memory.</description>
+   <bar>Predictably, the spaceport bar is themed on Wilibrord Gilligan, showing his likeness in several places and displaying a map of his travels through the galaxy on the wall. A popular topic in this bar is the dwarf planets in Gilligan's Memory, particularly speculations on why Gilligan chose to name them the way he did.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Gilligan's Tomb">
+  <pos>
+   <x>11200.000000</x>
+   <y>-11500.000000</y>
+  </pos>
+  <GFX>
+   <space>A00.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ginger II">
+  <pos>
+   <x>1152.000000</x>
+   <y>-10080.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-A01.png</space>
+   <exterior>snow.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ginger III">
+  <pos>
+   <x>25128.000000</x>
+   <y>-5112.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-D00.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ginni">
+  <pos>
+   <x>4951.946517</x>
+   <y>16999.507498</y>
+  </pos>
+  <GFX>
+   <space>M00.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>1000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Somewhat unusually in Dvaered space, Ginni is primarily a crop growing world. Though most Dvaered worlds trace their lineage to either mining or industrial roots, Ginni was a food producer even in the days when the Empire was still in control. Hoewever, with the change in political influence throughout the region, Ginni's government wisely chose to ally with the Dvaered movement.</description>
+   <bar>A lot of planetside spaceport bars have windows that give visitors a glance of the immediate environment, but the one on Ginni does not. This is because the sunlight on Ginni can get rather intense, and it was cheaper to build a wall than an automatically adjusting viewport. Besides, there's not too much to see anyway.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+  </tech>
+ </asset>
+ <asset name="Goddard III">
+  <pos>
+   <x>-7131.741933</x>
+   <y>-8453.589513</y>
+  </pos>
+  <GFX>
+   <space>D02.png</space>
+   <exterior>station04.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Goddard IV">
+  <pos>
+   <x>17801.100623</x>
+   <y>12942.126729</y>
+  </pos>
+  <GFX>
+   <space>P02.png</space>
+   <exterior>desertic4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Godtra">
+  <pos>
+   <x>-5947.221096</x>
+   <y>-5823.731170</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>7000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Godtra is a reasonably balanced world, with a sizeable civilian population, a fair amount of heavy industry and some farming for internal consumption, though the population largely depends on Torg Crops for sustenance. As Godtra is one of the wealthiest Dvaered systems within a few jumps, it is a popular target for Warlords to conquer.</description>
+   <bar>A pretty decent place as far as spaceport bars go, Godtra's bar is well equipped to facilitate traders and other offworlders. The data uplinks are decently speedy, which is rare on a Dvaered world. Clearly, the local infrastructure has been well designed.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>High Tech Upgrades 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Green Eye">
+  <pos>
+   <x>-57840.000000</x>
+   <y>8400.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-J01.png</space>
+   <exterior>mining6.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Greis">
+  <pos>
+   <x>-6442.157187</x>
+   <y>14944.299442</y>
+  </pos>
+  <GFX>
+   <space>G01.png</space>
+   <exterior>mining5.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>G</class>
+   <population>1000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Greis has a tradition, and that tradition is that whichever Warlord controls the planet renames it after himself. This often causes confusion among spacers everywhere, who will refer to the world by names that have been rendered obsolete. The current warlord is a man named Harmstadt Greis. His rule isn't particularly benevolent, but he at least doesn't seem worse than most Dvaered Warlords.</description>
+   <bar>At the center of this spaceport bar stands a pillar, on which are displayed all the names that the planet has been known by, including the name of one unfortunate Warlord named Clerke, who was in control of this world for a little under four hours.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+  </tech>
+ </asset>
+ <asset name="Gyrios II">
+  <pos>
+   <x>-6205.000000</x>
+   <y>10710.000000</y>
+  </pos>
+  <GFX>
+   <space>K03.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gyrios IV">
+  <pos>
+   <x>48540.000000</x>
+   <y>15785.000000</y>
+  </pos>
+  <GFX>
+   <space>A02.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Gyrios V">
+  <pos>
+   <x>39730.000000</x>
+   <y>-16475.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-C00.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Haldr">
+  <pos>
+   <x>-30090.992878</x>
+   <y>13378.186545</y>
+  </pos>
+  <GFX>
+   <space>X01.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>X</class>
+   <population>1000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Haldr ranks quite high on the official list of "most unpleasant inhabited planets in the galaxy", which is compiled at regular intervals by the Gilligan Foundation. Indeed, even the most optimistic space traveler would be hard pressed to find a good reason why anyone would want to come to Haldr, let alone stay there. As it turns out, Dvaered High Command has such a reason: Haldr serves as a training grounds for Dvaered military recruits. Though many an upcoming soldier finds death on the radioactive surface of Haldr, those who survive make for tough fighters indeed.</description>
+   <bar>To get into Haldr's bar, you first have to undergo a rigorous decontamination procedure, even when you're coming straight from the spaceport dock. This fact has made more than a few visitors so uneasy that they never want to visit Haldr again.</bar>
+  </general>
+ </asset>
+ <asset name="Haleb IV">
+  <pos>
+   <x>-9097.124865</x>
+   <y>-8125.122171</y>
+  </pos>
+  <GFX>
+   <space>I00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>I</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Halir">
+  <pos>
+   <x>-12053.358215</x>
+   <y>-6447.649991</y>
+  </pos>
+  <GFX>
+   <space>M07.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>3000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Before there was Emperor's Fist, before there was even the Incident, there was Halir, located in the Gamma Polaris system. While near the outskirts of the Empire, it served as one of the largest local civilian hubs, with a strong economy and considerable political influence. Then, one day, the new Emperor had Polaris Prime built, renamed most of the worlds in the system, and subsequently started the Emperor's Fist project. Halir was reduced to an economical support role. However, the local government has stubbornly clung on to the right to sovreignty, and so Halir remains a civilian world.</description>
+   <bar>Halir's bar has everything the weary traveler could hope for, from drinks to data uplink terminals to per-table sound dampening fields and music generators. In short it is a luxurious place, which is largely due to Halir's long history of economic success. Anything you can't find in the bar you can find in the pleasure district, which is just a single tube station away.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+   <item>Basic Civilian Ships</item>
+  </tech>
+ </asset>
+ <asset name="Hankies">
+  <pos>
+   <x>160.000000</x>
+   <y>17520.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-G00.png</space>
+   <exterior>mining4.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>G</class>
+   <population>35000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Hankies is something of a holiday resort as well as retreat for the wealthy. It is mainly a consumer world, having neither the land for agriculture nor the resources for industry. It does, however, have a pleasant ecosystem and a wealth of beautiful geography.</description>
+   <bar>Since Hankies doesn't have much to offer, the bar is almost entirely an import product. The architecture, the facilities and the drinks can all be traced offworld. The only thing that is truly authentic to this world is the view from the windows - a mountain range stretching away into the distance.</bar>
+  </general>
+ </asset>
+ <asset name="Hassak">
+  <pos>
+   <x>21594.608970</x>
+   <y>10226.293190</y>
+  </pos>
+  <GFX>
+   <space>C00.png</space>
+   <exterior>mining2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>C</class>
+   <population>60000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Ore</commodity>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Not exactly unhabitable and not exactly habitable, Hassak is one of those places where the less fortunate in society end up. The people here have it hard, with storms of almost every variety plagueing the landscape on a regular basis. The population feeds itself with the sale of raw minerals to the Nexus corporation, which buys well under the market price, because it can.</description>
+   <bar>The bar on Hassak is a lousy affair. The planet is poor, and so can't afford any luxury, least of all for offworlders. The Empire has provided the world with basic facilities and equipment because it is bound to do so by intergalactic treaties, but most of it is old and run-down.</bar>
+  </general>
+ </asset>
+ <asset name="Hatter I">
+  <pos>
+   <x>12980.000000</x>
+   <y>-484.000000</y>
+  </pos>
+  <GFX>
+   <space>A00.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Hatter II">
+  <pos>
+   <x>-2640.000000</x>
+   <y>5412.000000</y>
+  </pos>
+  <GFX>
+   <space>J00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Haven">
+  <pos>
+   <x>8514.404296</x>
+   <y>8209.228516</y>
+  </pos>
+  <GFX>
+   <space>A02.png</space>
+   <exterior>desertic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Hekaras III">
+  <pos>
+   <x>2189.636232</x>
+   <y>12176.513671</y>
+  </pos>
+  <GFX>
+   <space>moon-I00.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Hekaras IV">
+  <pos>
+   <x>-20146.206410</x>
+   <y>11878.412610</y>
+  </pos>
+  <GFX>
+   <space>I01.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Hikatalat">
+  <pos>
+   <x>20640.000000</x>
+   <y>1920.000000</y>
+  </pos>
+  <GFX>
+   <space>S00.png</space>
+   <exterior>methane.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>S</class>
+   <population>10000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Hikatalat used to be a resource world, before the rise of the Empire. But over time the colony was deemed to be unprofitable, and operations ceased. The world is still inhabited today, but its only value now lies in territorial control for Dvaered Warlords. The population is poor and lives in bad circumstances. There's nothing much to do here for offworlders.</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Huan'xi">
+  <pos>
+   <x>39360.000000</x>
+   <y>10640.000000</y>
+  </pos>
+  <GFX>
+   <space>M07.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>4000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Huan'xi may be a relatively remote planet, but it has a thriving agriculture. The planet's soil is extremely fertile, allowing for multiple crops per cycle. The planet also exports unique foodstuffs that are difficult to produce elsewhere. Indeed, one can find "genuine Huan'xi products" in food outlets all over the galaxy.</description>
+   <bar>The rustic feel of this bar is the product of a careful choice of appointments, music and holographic illusions. The owner clearly feels that customers will be attracted by the atmosphere of his establishments, rather than by the drinks he serves.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Bulk Trade Ships</item>
+   <item>Basic Outfits 1</item>
+  </tech>
+ </asset>
+ <asset name="Humdrum I">
+  <pos>
+   <x>-5880.000000</x>
+   <y>-1080.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-K00.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Humdrum II">
+  <pos>
+   <x>9600.000000</x>
+   <y>-8340.000000</y>
+  </pos>
+  <GFX>
+   <space>H02.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Humdrum III">
+  <pos>
+   <x>8580.000000</x>
+   <y>6900.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-J02.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Hurada">
+  <pos>
+   <x>-6368.749009</x>
+   <y>-1742.409055</y>
+  </pos>
+  <GFX>
+   <space>H01.png</space>
+   <exterior>desertic4.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>H</class>
+   <population>12000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>A formerly-promising world; following intense volcanic activity, Hurada's orbit decayed, increasing surface temperatures severely and all but eradicating natural surface life. Hurada only maintains a population due to its proximity to Arcturus, providing affordable housing for reserve military troops.</description>
+   <bar>The Hurada bar is large, yet nearly deserted. The booth seats in the back have long been unused, and have collected a layer of dust in that time. The brews are stale, and the bartender doesn't look like he wants to be here.</bar>
+  </general>
+ </asset>
+ <asset name="INSS-1">
+  <pos>
+   <x>16124.597177</x>
+   <y>-11480.653305</y>
+  </pos>
+  <GFX>
+   <space>station-agriculture.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>800</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>INSS-1, or Imperial Nutrient Supply Station 1, was the first in a number of Imperially funded space-side crop growing projects. The main purpose of the station is to grow food for nearby colonies and stations at extreme efficiency.</description>
+   <bar>Trim and functional, the bar here is situated in the central growing dome of ISS-1. The windows look out on vast stretches of multi-layered crop beds, and there's always a harvester to be seen at work somewhere out there.</bar>
+  </general>
+ </asset>
+ <asset name="INSS-2">
+  <pos>
+   <x>-4539.645412</x>
+   <y>9719.966587</y>
+  </pos>
+  <GFX>
+   <space>station-agriculture.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>800</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>INSS-2, or Imperial Nutrient Supply Station 2, was built in this remote secion of space to compensate for the lack of farming output in the sector. Food is not a very profitable commodity to trade over long distances, and the colonies in Nartur found themselves limited in their growth due to chronic shortages. INSS-2 has allowed them to grow.</description>
+   <bar>Trim and functional, the bar here is situated in the central growing dome of ISS-2. The windows look out on vast stretches of multi-layered crop beds, and there's always a harvester to be seen at work somewhere out there.</bar>
+  </general>
+ </asset>
+ <asset name="INSS-3">
+  <pos>
+   <x>-540.665429</x>
+   <y>14054.067443</y>
+  </pos>
+  <GFX>
+   <space>station-agriculture.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>1000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Somehwat curiously, Imperial Nutrient Supply Station 3 is actually owned by House Dvaered. Though initially constructed by the Empire, the station was ceded to House Dvaered as part of its official inception. INSS-3 still provides food for the Imperial colonies at Tau Prime and Draconis, though the price of food there has gone up by a fair margin ever since the change in ownership.</description>
+   <bar>The bar is not much to speak of. The Dvaered have shown a greater interest in farming than in public relations, so the spaceport bar has been largely neglected. It's a wonder the basic facilities are even functional at all.</bar>
+  </general>
+ </asset>
+ <asset name="Ian">
+  <pos>
+   <x>-30777.238017</x>
+   <y>7088.682857</y>
+  </pos>
+  <GFX>
+   <space>moon-M02.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>100000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Serving as the main consumer world on the eastern fringe of Empire space, Ian makes up for its small size by its wealth. The little sphere is quite a pleasant place to live, and many retiring Imperial officials and aristocrats have made the place their home. And where wealth goes, industry follows - Ian has its own modest ship construction facilities.</description>
+   <bar>On Ian, it's all about being seen. The bar never goes quiet, though the level of noise also never grows to uncivilized proportions. Both the gentry and the rich upstarts come to the recreational facilities to mingle and to strut their stuff to the offworlders who come here on business.</bar>
+  </general>
+  <tech>
+   <item>Basic Civilian Ships</item>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Icarus">
+  <pos>
+   <x>-3624.623724</x>
+   <y>-1715.052669</y>
+  </pos>
+  <GFX>
+   <space>A00.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>1000</population>
+   <services>
+    <land/>
+    <refuel/>
+   </services>
+   <commodities/>
+   <description>Named after the figure from Greek mythology, Icarus is a hot world with extreme seismic activity. This makes it the perfect location for some of Totoran's volcanic-themed arenas. Gladiators fighting on Icarus have as much to fear from the environment as they have from each other, and the most spectacular kills made in the arenas here involve the unstable terrain itself.</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Imk">
+  <pos>
+   <x>3303.666819</x>
+   <y>11690.405671</y>
+  </pos>
+  <GFX>
+   <space>moon-P01.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Inca">
+  <pos>
+   <x>-6756.276409</x>
+   <y>7401.062317</y>
+  </pos>
+  <GFX>
+   <space>moon-I01.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ingot I">
+  <pos>
+   <x>-9900.000000</x>
+   <y>-3660.000000</y>
+  </pos>
+  <GFX>
+   <space>C00.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Inios Station">
+  <pos>
+   <x>16510.246913</x>
+   <y>862.507713</y>
+  </pos>
+  <GFX>
+   <space>003.png</space>
+   <exterior>mining4.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>5000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Inios Station is something like a border guard between Sirius and Dvaered controlled territories. Though officially not a military complex, Inios does garrison far more combat capable ships that one might expect of a commercial station. Whenever the Dvaered send in skirmish fleets to try the Sirius defenses, it is Inios Station that sends them on their way home.</description>
+   <bar>The bar is built against an outer wall. Several large windows allow patrons to look out on the frozen wastes of Eye of Night III, the planet around which the station orbits. Not coincidentally, the windows also allow people to see the Sirius armed forces docking and taking off, emphasizing the military capacity of the station.</bar>
+  </general>
+  <tech>
+   <item>Light Civilian Combat Ships</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Jaan">
+  <pos>
+   <x>-17106.988508</x>
+   <y>-10288.870591</y>
+  </pos>
+  <GFX>
+   <space>M00.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>9000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Jaan is one of the most densely populated planets in this corner of the galaxy. The world benefits greatly from nearby Nexus operations, which makes it a popular place to live despite the environmental issues that inevitably come with a large population, and the problems with security that have arisen in recent years.</description>
+   <bar>Jaan has a big spaceport, and to facilitate the many pilots and crews that pass through it has multiple spaceport bars. Each spaceport bar is exactly the same as all the others, though. Not even the people who frequently visit Jaan can tell them apart. This regularly causes problems for unsuspecting people who promised to meet at the spaceport bar.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Jaegnhild">
+  <pos>
+   <x>19330.000000</x>
+   <y>-3515.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-O00.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>O</class>
+   <population>30000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>There can almost be no greater contrast than there is between Jaegnhild and its primary, Uuries. One is an ocean world, filled with all kinds of unlikely forms of life, while the other is a lifeless chunk of coalesced dust. Jaegnhild was one of the last colonies established in the First Growth, but among all the chosen worlds it was perhaps the most suitable to life when the colony ship arrived. Though not many call the floating cities their home, the standard of living is unusually high for a Frontier world.</description>
+   <bar>Jaegnhild's bar is built into an ancient compartiment of the colony ship Pristine, which brought the first human settlers to this world so many years ago. Though most of the structure has been rebuilt using newer materials, the original plating can still be seen in places.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+  </tech>
+ </asset>
+ <asset name="Jorcan">
+  <pos>
+   <x>14226.623033</x>
+   <y>-4360.650738</y>
+  </pos>
+  <GFX>
+   <space>G01.png</space>
+   <exterior>mining.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>G</class>
+   <population>170000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+   </commodities>
+   <description>Jorcan is a very barren, dull planet, like most mining worlds. Having been mined for decades, its resources have been nearly exhausted. However, mining corporations are known to persist until there's no longer a profit to be made, leaving depleted, dead planets.</description>
+   <bar>The one word that would describe the Jorcan spaceport bar would be dust. It's everywhere: on the seats, on the counter, in the drinks, on everyone's faces. A coarse soot has coated your palm just holding your drink. You wonder if it will ever wash off.</bar>
+  </general>
+ </asset>
+ <asset name="Jorlan">
+  <pos>
+   <x>2166.504922</x>
+   <y>12008.424609</y>
+  </pos>
+  <GFX>
+   <space>D01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>D</class>
+   <population>5000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Jorlan is one of the least successful Frontier worlds. Its colony ship, Santa Maria, arrived to find a barren, desolate rock that had next to no potential for human inhabitants. But with the only other reachable planet being a gas giant, Santa Maria's captain was faced with the choice to settle or perish. Somehow, his expedition has managed to eke out an existence on Jorlan.
+Jorlan's inhabitants are mostly part of the ore refining process, as it supplies most of the Frontier with all sorts of alloys. Gas miners are also sent to Haleb IV every dozen STU when the climate conditions are favorable.</description>
+   <bar>Rather out of character for a heavy-industry world, the people of Jorlan people don't really have a habit of drinking. You see numerous other spacefarers, but no natives.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Jugreny">
+  <pos>
+   <x>-2500.000000</x>
+   <y>-10800.000000</y>
+  </pos>
+  <GFX>
+   <space>M02.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Missiles 1</item>
+  </tech>
+ </asset>
+ <asset name="Karman I">
+  <pos>
+   <x>3380.000000</x>
+   <y>8775.000000</y>
+  </pos>
+  <GFX>
+   <space>K04.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Karman II">
+  <pos>
+   <x>-27075.000000</x>
+   <y>-5655.000000</y>
+  </pos>
+  <GFX>
+   <space>O01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Khelim">
+  <pos>
+   <x>-5534.972756</x>
+   <y>11532.092902</y>
+  </pos>
+  <GFX>
+   <space>Y00.png</space>
+   <exterior>methane.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>Y</class>
+   <population>5000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Khelim was the target world for Majestic, the eleventh colony ship sent from Earth in the First Growth. Majestic was populated chiefly by people from India and the Middle East, and though interstellar traffic has been commonplace for many years now, the characteristic features of that area can still be seen on the faces of the people of Khelim.</description>
+   <bar>The Crescent Blade bar is about as respectable as low-profile bars come. It has all the standard facilities the galactic traveler has come to rely on, and the service leaves nothing to be desired. Other than that, the place is unremarkable.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+  </tech>
+ </asset>
+ <asset name="Klantar I">
+  <pos>
+   <x>-3510.000000</x>
+   <y>30564.000000</y>
+  </pos>
+  <GFX>
+   <space>O00.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Klantar III">
+  <pos>
+   <x>2862.000000</x>
+   <y>-5508.000000</y>
+  </pos>
+  <GFX>
+   <space>J01.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Koralis IV">
+  <pos>
+   <x>-2040.407967</x>
+   <y>-1971.707362</y>
+  </pos>
+  <GFX>
+   <space>moon-A00.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Koralis VI">
+  <pos>
+   <x>7372.949583</x>
+   <y>-14577.941627</y>
+  </pos>
+  <GFX>
+   <space>Y00.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Kotori">
+  <pos>
+   <x>25299.285122</x>
+   <y>31660.203761</y>
+  </pos>
+  <GFX>
+   <space>moon-I00.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Kretogg I">
+  <pos>
+   <x>-7954.714288</x>
+   <y>1876.054512</y>
+  </pos>
+  <GFX>
+   <space>J03.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Kretogg II">
+  <pos>
+   <x>15300.000000</x>
+   <y>-9250.000000</y>
+  </pos>
+  <GFX>
+   <space>K03.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Kretogg III">
+  <pos>
+   <x>19900.000000</x>
+   <y>8200.000000</y>
+  </pos>
+  <GFX>
+   <space>S00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ksher I">
+  <pos>
+   <x>6248.000000</x>
+   <y>7700.000000</y>
+  </pos>
+  <GFX>
+   <space>J02.png</space>
+   <exterior>mining5.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ksher II">
+  <pos>
+   <x>-19932.000000</x>
+   <y>7304.000000</y>
+  </pos>
+  <GFX>
+   <space>D02.png</space>
+   <exterior>station04.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ksher III">
+  <pos>
+   <x>-3652.000000</x>
+   <y>-7524.000000</y>
+  </pos>
+  <GFX>
+   <space>M01.png</space>
+   <exterior>methane.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Laarss">
+  <pos>
+   <x>14354.175136</x>
+   <y>-15731.478785</y>
+  </pos>
+  <GFX>
+   <space>G02.png</space>
+   <exterior>mining6.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>G</class>
+   <population>900000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+   </commodities>
+   <description>Laarss is a resource world. Before the inception of House Dvaered, it used to supply the Imperial economy with raw materials at bottom prices. Nowadays, its chief export market is Eist Shipyard, which is in constant need of ship building resources. Though Laarss is largely the same mining colony it was before, working here is considered something of a privilege among Dvaered citizens, considering its location in Dvaer.</description>
+   <bar>Though technically this place is the spaceport bar, its main function is a place of leisure for the local population. At all times, you can find large groups of Dvaered workers here, spending their off-time and their credits on booze and entertainment.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Lapis I">
+  <pos>
+   <x>3300.000000</x>
+   <y>6050.000000</y>
+  </pos>
+  <GFX>
+   <space>D02.png</space>
+   <exterior>station04.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lapis II">
+  <pos>
+   <x>-4200.000000</x>
+   <y>-7700.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-P00.png</space>
+   <exterior>mining3.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lapra">
+  <pos>
+   <x>10995.000000</x>
+   <y>24825.000000</y>
+  </pos>
+  <GFX>
+   <space>K02.png</space>
+   <exterior>mining.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>K</class>
+   <population>350000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Though Coriolis was the second colony ship, it arrived at Lapra well after New Dortmund had been colonized due to technical difficulties and unforeseen incidents during the journey. When it finally did establish orbit around Lapra, it found a world so low on potential for life that the trip almost seemed like a lost cause. However, upon touchdown the colonists found that there were many useful minerals hidden below the surface of the planet. The colony on Lapra has survived, first out of sheer necessity and later by virtue of its exports.</description>
+   <bar>Lapra's bar looks more like a market than a place for relaxation, and indeed that is exactly what it is. Not only do traders come here to make transactions, the local population also uses the bar as a center for commerce. That said, one can still find a drink and a news terminal, if one looks hard enough.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Light Civilian Combat Ships</item>
+   <item>Bulk Trade Ships</item>
+  </tech>
+ </asset>
+ <asset name="Larling">
+  <pos>
+   <x>-8640.000000</x>
+   <y>680.000000</y>
+  </pos>
+  <GFX>
+   <space>M07.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lazuli I">
+  <pos>
+   <x>8368.055556</x>
+   <y>13445.015432</y>
+  </pos>
+  <GFX>
+   <space>H00.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lazuli III">
+  <pos>
+   <x>-16920.000000</x>
+   <y>-4560.000000</y>
+  </pos>
+  <GFX>
+   <space>H02.png</space>
+   <exterior>desertic4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lazuli Ia">
+  <pos>
+   <x>9120.000000</x>
+   <y>13020.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-H00.png</space>
+   <exterior>mining3.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Leo">
+  <pos>
+   <x>-5902.764764</x>
+   <y>4792.802567</y>
+  </pos>
+  <GFX>
+   <space>002.png</space>
+   <exterior>mining4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Limbo I">
+  <pos>
+   <x>7800.000000</x>
+   <y>8350.000000</y>
+  </pos>
+  <GFX>
+   <space>K02.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Limbo II">
+  <pos>
+   <x>-11500.000000</x>
+   <y>5950.000000</y>
+  </pos>
+  <GFX>
+   <space>A03.png</space>
+   <exterior>desertic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Lorelei">
+  <pos>
+   <x>-38220.000000</x>
+   <y>4150.000000</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>6000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Churchill's economic position has turned Lorelei into a well developed world. The constant trade revenues have allowed for large habitation complexes and underground factories that wouldn't look out of place on a Dvaered industrial world. However, unlike the Dvaered, the Sirii have put some thought into their infrastructure, and pollution is kept to a minimum.</description>
+   <bar>Because the Sirii didn't want to waste space on a full-fledged spaceport bar, the bar on Lorelei is a virtual one. Visitors enter a VR booth and are given the illusion of being in a large, luxurious spaceport bar, where they can interact with other visitors and the uplink avatars. It is even possible to consume beverages in the virtual bar, as the VR booth is capable of stimulating the part of the human brain that deals with food and drink.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Luxsor">
+  <pos>
+   <x>-638.461900</x>
+   <y>8974.249360</y>
+  </pos>
+  <GFX>
+   <space>moon-A00.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="M.K.">
+  <pos>
+   <x>-10298.000000</x>
+   <y>2166.000000</y>
+  </pos>
+  <GFX>
+   <space>M01.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Madeleine Station">
+  <pos>
+   <x>14794.876439</x>
+   <y>-4639.755662</y>
+  </pos>
+  <GFX>
+   <space>002.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>1000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <outfits/>
+   </services>
+   <commodities/>
+   <description>In a strange twist of fate, Madeleine station was named after the granddaughter of the first commander to be stationed here. The place serves as the Empire's southernmost military base. It was originally little more than a minor depot, but has grown into an important line of defense against the southern pirates in recent years.</description>
+   <bar>Since traders don't come to this military base, the bar is only frequented by Imperial military personnel. It's more like a canteen than a bar, really.</bar>
+  </general>
+  <tech>
+   <item>High Tech Upgrades 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Madria">
+  <pos>
+   <x>-8515.000000</x>
+   <y>-1690.000000</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>3000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Madria is one of the few immigration worlds in Sirius space. Colonists from the Frontier constantly trickle into Esker, and they all end up here. The new arrivals are immediately converted and incorporated into the Shaira echelon, which is why that group is over-represented on this world. Only after several cycles of life on Madria do the immigrants get permission to move to other Sirius worlds or serve in the Sirius military.</description>
+   <bar>There are two spaceport bars on Madria, one for regular visitors and one for immigrants. The one for immigrants is more or less a portal into Sirius society - a one way portal. Normal spacers stay away from it.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Malebolge">
+  <pos>
+   <x>-2964.262874</x>
+   <y>-11151.251241</y>
+  </pos>
+  <GFX>
+   <space>moon-A01.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Manis">
+  <pos>
+   <x>16020.000000</x>
+   <y>-7500.000000</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>4000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Manis is a cool world, though it still counts as earthlike. Unlike many other class M planets in the galaxy, no terraforming was ever performed here, so the world has almost the same ecosystem it did when it was first settled during the Second Growth. Many people are attracted to this "authentic" feel of the planet, which accounts for a significant portion of its popularity.</description>
+   <bar>Perhaps uniquely in the entire galaxy, Manis' spaceport bar doesn't serve alcohol. It has any amount of sodas and herbal teas available, but they don't seem as effective at attracting customers to the bar as would your ordinary spacer's swill.</bar>
+  </general>
+  <tech>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Mannannan">
+  <pos>
+   <x>-7152.264249</x>
+   <y>-10820.708001</y>
+  </pos>
+  <GFX>
+   <space>M06.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>600000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Mannannan is one of the more frequently visited Dvaered worlds. Uncharacteristically for a Dvaered planet, its political policies and its economy have remained fairly stable, since none of the Warlords controlling the planet have ever bothered to change the local laws in major ways. This has made Mannannan a favorable place to trade for foreigners. Of course, the Dvaered Warlords seem to be oblivious of this, so Mannannan will likely continue to be a unicum.</description>
+   <bar>This bar is one of many. The increase in trade has also brought an increase in tastes, so there are several places that cater to particular tastes, even some very unsavory ones. Fortunately, the most accessible bar seems to be as respectable as bars come.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+   <item>Light Civilian Combat Ships</item>
+  </tech>
+ </asset>
+ <asset name="Manuel Station">
+  <pos>
+   <x>-6490.624381</x>
+   <y>-8887.528980</y>
+  </pos>
+  <GFX>
+   <space>station-shipyard.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Goddard</faction>
+   <value>100.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Manuel Station is named after Eduard Manuel Goddard, the man to which House Goddard owes its existence. The station is primarily a shipyard, and thus contributes a great deal to House Goddard's local economy. Its position around Goddard III is no coincidence, as the lifeless planet provides many of the raw materials needed to produce space ships.</description>
+   <bar>The station's bar is more businesslike than recreative. The people who come here are either traders who came to load or unload goods, or potential customers looking for a Goddard-made ship. Nobody is really interested in just passing the time, because time is money on Manuel Station.</bar>
+  </general>
+  <tech>
+   <item>Heavy Civilian Combat Ships</item>
+   <item>Bulk Trade Ships</item>
+   <item>Goddard Ship</item>
+   <item>Basic Outfits 2</item>
+   <item>High Tech Upgrades 1</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Marius Station">
+  <pos>
+   <x>-6537.980310</x>
+   <y>8415.469108</y>
+  </pos>
+  <GFX>
+   <space>station-battlestation.png</space>
+   <exterior>station04.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+   </services>
+   <commodities/>
+   <description>Marius Station used to be a customs station of the old Empire, checking traffic bound for Sol and the core Imperial systems. Now, in the post-Incident era, the station serves as the first line of defense from hostile elements that threaten the isolated colonies at Tau Prime and beyond. But since it is perpetually under-staffed and under-equipped, Marius Station is barely capable of maintaining its own presence in Raelid, let alone protect anything else.</description>
+   <bar>This bar is self-service most of the time. All Empire personnel on board have their hands full with double shifts, repair duties and briefings. Few have the spare time to even visit the spacedock bar, let alone staff it.</bar>
+  </general>
+  <tech>
+   <item>Heavy Civilian Combat Ships</item>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Massia I">
+  <pos>
+   <x>12852.000000</x>
+   <y>9588.000000</y>
+  </pos>
+  <GFX>
+   <space>A02.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Massia IV">
+  <pos>
+   <x>-950.807860</x>
+   <y>-15321.049666</y>
+  </pos>
+  <GFX>
+   <space>D02.png</space>
+   <exterior>methane.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Massia IVa">
+  <pos>
+   <x>-1088.000000</x>
+   <y>-15096.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-G01.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Mastodon Station">
+  <pos>
+   <x>22542.588874</x>
+   <y>1758.254694</y>
+  </pos>
+  <GFX>
+   <space>station-powerplant.png</space>
+   <exterior>desertic.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>200</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Mastodon Station is a power generator, supplying the local planets with energy cells. It also produces power cores and low power energy weapons for the ships produced at Orville Shipyard.</description>
+   <bar>The spacedock bar is constantly filled with the low hum of heavy machinery. The entire station reverberates with it, which really gives you the impression that the place is active.</bar>
+  </general>
+ </asset>
+ <asset name="Maya">
+  <pos>
+   <x>-6440.000000</x>
+   <y>7700.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-C00.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Megan Station">
+  <pos>
+   <x>10991.232815</x>
+   <y>-5153.224088</y>
+  </pos>
+  <GFX>
+   <space>station-powerplant.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>300</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+   </services>
+   <commodities/>
+   <description>The Frontier is relatively poor, and part of the reason for this is that the Frontier is lacking in energy output. In an attempt to reinforce this weak link, the Frontier Council sanctioned the construction of a deep space power generator, whish was to provide energy cells to industries across Frontier space. That generator is Megan Station.</description>
+   <bar>The spacedock bar is quite plain in its appointments. The Frontier people have learned to be practical and utilitarian, and so didn't waste any more space or effort on the bar onboard Megan than was required.</bar>
+  </general>
+ </asset>
+ <asset name="Merisi I">
+  <pos>
+   <x>-16800.000000</x>
+   <y>5390.000000</y>
+  </pos>
+  <GFX>
+   <space>K00.png</space>
+   <exterior>mining3.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Merisi II">
+  <pos>
+   <x>9800.000000</x>
+   <y>-21140.000000</y>
+  </pos>
+  <GFX>
+   <space>O01.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Merisi III">
+  <pos>
+   <x>-24500.000000</x>
+   <y>-19460.000000</y>
+  </pos>
+  <GFX>
+   <space>D02.png</space>
+   <exterior>mining2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Merisi IV">
+  <pos>
+   <x>19320.000000</x>
+   <y>490.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-P02.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Modus">
+  <pos>
+   <x>-5700.000000</x>
+   <y>5580.000000</y>
+  </pos>
+  <GFX>
+   <space>A00.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>1000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Modus is an unstable world, but it is surprisingly well populated. Something about the planet is greatly beneficial to human fertility, which makes it a popular destination for couples trying to conceive a child the natural way. Of course this is not without risk, as the planet's volatile nature claims a considerable number of lives each cycle.</description>
+   <bar>This bar has chosen to constantly play a heavy beat music track. This is not because people like heavy beat music, but rather to mask the tremors the planet's unstable crust sometimes creates.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Mouddar">
+  <pos>
+   <x>4755.463992</x>
+   <y>-15972.357019</y>
+  </pos>
+  <GFX>
+   <space>O00.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>O</class>
+   <population>400000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+   </commodities>
+   <description>Mouddar is a bit of a leisure resort, in all but name. While the planet does have a resident population, most of its income is from tourism. The planet is speckled with tiny coral peninsulae, which are prefect for all kinds of water sports. Unfortunately, the enthusiasm of the Imperial adolescents who come here has had a detrimental effect on the environment.</description>
+   <bar>Nobody really cares about Mouddar's spaceport bar, apart from the traders who only stop here to load and unload. Most civilian visitors, though, immediately head for the sun, sand and surf that they came here to enjoy.</bar>
+  </general>
+ </asset>
+ <asset name="Mutris">
+  <pos>
+   <x>33152.000000</x>
+   <y>30118.000000</y>
+  </pos>
+  <GFX>
+   <space>L00.png</space>
+   <exterior>mining4.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>300.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>L</class>
+   <population>3000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Mutris. The very heart of Sirius space. This is where Crater City is to be found, home of Sirichana and the many Sirii pilgrims who will one day become the Touched. Crater City being the most holy of places, the airspace in a wide area around it is closed. The spaceport is located thousands of kilometers away. All approaches happen under a tight escort, and non-Sirii are confined to the commercial district of the planet's political capital.</description>
+   <bar>The spaceport bar is the primary meeting place for offworlders on Mutris. Since only Sirii may venture beyond the commercial district, all others are either conducting business or relaxing here. As far as bars go, Mutris' is a fairly accomodating one, though the various religious references make it somewhat uncomfortable to some.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>High Tech Upgrades 1</item>
+   <item>Basic Civilian Ships</item>
+  </tech>
+ </asset>
+ <asset name="Myonei">
+  <pos>
+   <x>17608.422019</x>
+   <y>33902.001921</y>
+  </pos>
+  <GFX>
+   <space>K03.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Myuirr Station">
+  <pos>
+   <x>6203.038328</x>
+   <y>-8375.950143</y>
+  </pos>
+  <GFX>
+   <space>station-cylinder.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>500</population>
+   <services>
+    <land/>
+    <refuel/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Ore</commodity>
+   </commodities>
+   <description>The Dvaered war machine relies a lot on flinging chunks of matter at enemy ships, and those chunks of matter have to come from somewhere. Myuirr Station is one of the most productive ammunition production facilities in Dvaered space. It produces ordinance for a variety of ballistic and missile weaponry. The portion of its produce that isn't claimed by Dvaered High Command in tax is sold to Warlords, retailers and civilians for profit.</description>
+   <bar>(null)</bar>
+  </general>
+  <tech>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+  </tech>
+ </asset>
+ <asset name="Nappi">
+  <pos>
+   <x>-17112.889013</x>
+   <y>2502.957678</y>
+  </pos>
+  <GFX>
+   <space>H01.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>H</class>
+   <population>200000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+   </commodities>
+   <description>Nappi is one of those names that gets chuckled over in distant spaceport bars. The world is home to a small population that moves across the face of the planet as the seasons progress, living a semi-nomadic life. The capital city is always populated though, because it is the only link to the rest of the galaxy.</description>
+   <bar>Few offworlders venture beyond the spaceport bar. There is little to do in the capital city other than to conduct trade, and the outside air becomes unpleasant after only minutes of exposure. Besides, there's very little to see, unless you enjoy looking at endless stretches of rock and sand.</bar>
+  </general>
+ </asset>
+ <asset name="Nartur I">
+  <pos>
+   <x>-14560.000000</x>
+   <y>-8260.000000</y>
+  </pos>
+  <GFX>
+   <space>K02.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nartur II">
+  <pos>
+   <x>-31150.000000</x>
+   <y>6650.000000</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nartur III">
+  <pos>
+   <x>18270.000000</x>
+   <y>18760.000000</y>
+  </pos>
+  <GFX>
+   <space>I01.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nartur IV">
+  <pos>
+   <x>-2384.730872</x>
+   <y>26572.715435</y>
+  </pos>
+  <GFX>
+   <space>I00.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nartur IVa">
+  <pos>
+   <x>-1543.405283</x>
+   <y>26314.461681</y>
+  </pos>
+  <GFX>
+   <space>moon-J00.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="New Deimos">
+  <pos>
+   <x>-1403.081683</x>
+   <y>3894.469528</y>
+  </pos>
+  <GFX>
+   <space>I00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="New Dortmund">
+  <pos>
+   <x>-30820.101542</x>
+   <y>-18688.394805</y>
+  </pos>
+  <GFX>
+   <space>M07.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>1000000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Medicine</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>New Dortmund was founded by the very first colony ship to leave Earth, Genesis. The planet itself was known only by its systematic designation for a long time, New Dortmund being the name of the settlement. However, since the settlement was the only thing the colonists knew for many years, its name became synonymous with the world. The moon Folevo was named after the leader of the Genesis expedition, who sadly perished only a few years after the initial touchdown.
+New Dortmund was never very successful in any sense of the term, but it is still pulling its weight in the overall Frontier economy.</description>
+   <bar>New Dortmund's spaceport bar is mostly deserted, the locals frequenting their own establishments and offworlders preferring to stay with their ships. The only reason the place is still running is because the Frontier Council subsidizes it, on the basis that a spaceport bar will help attract people to New Dortmund. So far, it hasn't.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Bulk Trade Ships</item>
+  </tech>
+ </asset>
+ <asset name="New Haven">
+  <pos>
+   <x>-57520.000000</x>
+   <y>4400.000000</y>
+  </pos>
+  <GFX>
+   <space>X01.png</space>
+   <exterior>gas.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Pirate</faction>
+   <value>600.000000</value>
+   <range>5</range>
+  </presence>
+  <general>
+   <class>D</class>
+   <population>9000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Medicine</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>New Haven is a planet located beyond the boundaries of law and justice. Founded by Bartax the Great, one of the most successful pirates to ever live, after Haven was annihilated. The planet's atmosphere is highly toxic and has high levels of radiation outside of the stronghold. These very features are what made the Empire classify it as uninhabitable, as it lacks strategic resources necessary to justify the cost of terraforming. Its distance from other civilized worlds affords it protection from prying eyes.</description>
+   <bar>The Slop and Grill is one of the nastiest taverns in the universe. The food and drink don't help matters. Most of it is brewed on New Haven and wouldn't pass any of the minimal health insurance tests. Some of the booze even doubles as ship fuel if needed. The clients are also deep space thugs, pirates, black marketers, mercenaries and other shady folk that insist on keeping the ground coated with blood and broken teeth. Not a great place to bring the family.</bar>
+  </general>
+  <tech>
+   <item>Pirate Ships</item>
+   <item>Missiles 1</item>
+   <item>Missiles 2</item>
+   <item>Heavy Weapons 1</item>
+   <item>Low Tech Upgrades</item>
+   <item>High Tech Upgrades 1</item>
+  </tech>
+ </asset>
+ <asset name="New Mars">
+  <pos>
+   <x>12735.693828</x>
+   <y>-19340.936117</y>
+  </pos>
+  <GFX>
+   <space>K00.png</space>
+   <exterior>desertic.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>K</class>
+   <population>100000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+   </services>
+   <commodities/>
+   <description>The Emperor's Fist project needs a lot of raw materials. A portion of those materials are mined right here on New Mars, which has the advantage that no trip through hyperspace is needed to get them to location. New Mars is being systematically strip-mined, and as such the planet has nothing to offer in the way of leisure or tourism.</description>
+   <bar>Clean and functional, this bar has been built according to recent Imperial standards. It's more a utility service than a place to unwind.</bar>
+  </general>
+ </asset>
+ <asset name="New Phobos">
+  <pos>
+   <x>-2831.086139</x>
+   <y>-18662.964893</y>
+  </pos>
+  <GFX>
+   <space>D01.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="New Pluto">
+  <pos>
+   <x>-10360.291323</x>
+   <y>14032.927476</y>
+  </pos>
+  <GFX>
+   <space>moon-P02.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Niflheim">
+  <pos>
+   <x>-9965.863598</x>
+   <y>2823.758187</y>
+  </pos>
+  <GFX>
+   <space>station-sphere.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>3000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Medicine</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Although not a large installation by any measure, Niflheim is the main commercial station in the southwestern quadrant of Empire space. Though it doesn't see as much traffic as the more centrally located trade hubs, it provides a good opportunity for traders between the Empire, the Za'lek and the Consortium to meet and greet. Of course, the Imperial Navy also uses this station as a base of operations.</description>
+   <bar>On Niflheim, space is at a premium. As such there is not much room to spare for leisure, which shows in the spaceport bar. All tables are stand-up arrangements, and there is not much room to maneuver. Any visitor will have to be prepared for some necessary intimacies if he wants to frequent this establishment.</bar>
+  </general>
+  <tech>
+   <item>Missiles 1</item>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Niger I">
+  <pos>
+   <x>-25142.222222</x>
+   <y>-2473.333333</y>
+  </pos>
+  <GFX>
+   <space>P01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Niger II">
+  <pos>
+   <x>13920.000000</x>
+   <y>-15480.000000</y>
+  </pos>
+  <GFX>
+   <space>P02.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nixa">
+  <pos>
+   <x>6416.652506</x>
+   <y>-7838.062872</y>
+  </pos>
+  <GFX>
+   <space>M05.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>50.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>10000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Nixa is a young colony. It was first settled mere years before the Incident occurred. With the galaxy-wide economic collapse that followed in its wake, Nixa's budding growth came close to a halt. The population struggles to make the colonization project a success even so, but now that Dune has become a fringe system, chances of that seem remote.</description>
+   <bar>Nixa's bar is still the makeshift affair it was when the planet was first colonized. There haven't been the resources nor the time to replace it with something more solid.</bar>
+  </general>
+ </asset>
+ <asset name="Nonuri">
+  <pos>
+   <x>13346.980601</x>
+   <y>-10858.126526</y>
+  </pos>
+  <GFX>
+   <space>moon-M03.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>900000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Medicine</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Nonuri is a world with an under-developed economy, even by Frontier standards. It barely manages to keep itself from going bankrupt. The people who live here stay mainly out of a sense of belonging, a feeling that Nonuri is their birthright. In fact, Nonuri was colonized by the colony ship Petrovosk, which makes Nonuri one of the oldest extrasolar human settlements. Unfortunately for the locals, most of the galaxy doesn't care quite as much as they do.</description>
+   <bar>The spaceport bar is humble, yet tidy and functional. The Nonurians may not enjoy a rich life, but they make the most of what they've got. Though the equipment is outdated, in some cases by several generations, this bar has most of the things an intergalactic traveler needs to keep abreast of events.</bar>
+  </general>
+ </asset>
+ <asset name="Nor">
+  <pos>
+   <x>7315.200103</x>
+   <y>12594.489712</y>
+  </pos>
+  <GFX>
+   <space>J03.png</space>
+   <exterior>gas.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>I</class>
+   <population>130000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Nor was one of the first Dvaered worlds to be terraformed. Its abundance of gas and ore make it a strategic location and a prime target for the FLF. Due to repeated attacks and sabotage attempts, the Dvaered military has increased the frequency of patrols.</description>
+   <bar>Typical of poorer Dvaered mining worlds, the Nor spaceport bar is cavernous, sparsely decorated and full of drunken Dvaereds trying to forget their hard labour.</bar>
+  </general>
+ </asset>
+ <asset name="Norpin II">
+  <pos>
+   <x>-15040.000000</x>
+   <y>11200.000000</y>
+  </pos>
+  <GFX>
+   <space>H02.png</space>
+   <exterior>desertic3.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>H</class>
+   <population>260000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Norpin II is truly at the edge of the frontier, a barely-habitable world being mined and terraformed, though the latter is being done as cheaply as possible, resulting in very poor conditions. The Dvaered are loathed here, and it's rumored that the local shipyard is a major source of FLF vessels.</description>
+   <bar>The Norpin II bar isn't the safest place around. With a deep-seated loathing of the Dvaered, the local citizens have brawled with Dvaered soldiers on numerous occasions.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Basic Civilian Ships</item>
+   <item>Basic Outfits 1</item>
+  </tech>
+ </asset>
+ <asset name="Norpin IV">
+  <pos>
+   <x>12080.000000</x>
+   <y>-20640.000000</y>
+  </pos>
+  <GFX>
+   <space>L00.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nougat I">
+  <pos>
+   <x>-480.000000</x>
+   <y>10020.000000</y>
+  </pos>
+  <GFX>
+   <space>M08.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nougat II">
+  <pos>
+   <x>-2280.000000</x>
+   <y>-5760.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-P02.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Nova Shakar">
+  <pos>
+   <x>-10796.405599</x>
+   <y>-7216.167022</y>
+  </pos>
+  <GFX>
+   <space>M05.png</space>
+   <exterior>forest2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>812000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Nova Shakar was an utterly unremarkable Empire planet until the Emperor's Fist project began. Increasingly, Empire officials are settling here, given its close proximity to Gamma Polaris. In the time since then, it's become a supplier of many materials for the project, gaining importance within the Empire.</description>
+   <bar>While not a grandiose affair, the spaceport bar is reasonably sized and immaculately clean. Due to the increasing number of Empire officials making their home here, it remains busy throughout the day.</bar>
+  </general>
+  <tech>
+   <item>Light Civilian Combat Ships</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Oberon I">
+  <pos>
+   <x>16150.000000</x>
+   <y>-3192.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-A00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Oberon III">
+  <pos>
+   <x>3686.000000</x>
+   <y>1900.000000</y>
+  </pos>
+  <GFX>
+   <space>G01.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Oberon IV">
+  <pos>
+   <x>-190.000000</x>
+   <y>-13680.000000</y>
+  </pos>
+  <GFX>
+   <space>J01.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Old Man Jack">
+  <pos>
+   <x>-6320.000000</x>
+   <y>15040.000000</y>
+  </pos>
+  <GFX>
+   <space>G02.png</space>
+   <exterior>mining5.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Oma">
+  <pos>
+   <x>-3100.298044</x>
+   <y>-3366.492496</y>
+  </pos>
+  <GFX>
+   <space>H01.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>H</class>
+   <population>20000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+   </commodities>
+   <description>Oma is one of the harsher desert worlds. The external temperature varies nearly 400 degrees each day, making it completely incapable of sustaining human life outside of climate-controlled bases. The lack of proper terraforming equipment also makes it hard on the visitors by the drastic temperature changes they endure across the base.</description>
+   <bar>The Lost Drunk isn't much of a bar. The high price of most beverages and the low population results in few customers. From what you can see it's mainly shipping pilots and the odd mercenary sitting apart from each other. Not a jolly place.</bar>
+  </general>
+ </asset>
+ <asset name="Omega Station">
+  <pos>
+   <x>-10032.106791</x>
+   <y>7530.403357</y>
+  </pos>
+  <GFX>
+   <space>station-battlestation.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>200.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>14000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+   </commodities>
+   <description>Built to defend the Empire from the Collective, the Omega Station has observed countless battles fought in its sector. Its presence has helped stem the flow of Collective drones into Empire space..</description>
+   <bar>The Omega Canteen is a dark place that seems calm, although everytime a robotic drone approaches an alarm sounds sending pilots to man their ships to fight off the menace.</bar>
+  </general>
+  <tech>
+   <item>Heavy Weapons 1</item>
+   <item>Low Tech Upgrades</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Onar">
+  <pos>
+   <x>20081.982211</x>
+   <y>-11605.752853</y>
+  </pos>
+  <GFX>
+   <space>O01.png</space>
+   <exterior>aquatic3.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>50.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>O</class>
+   <population>700000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Onar serves as one of House Dvaered's foremost weapons development facilities. The planet has a peculiar characteristic that causes its gravity to fluctuate from region to region, which makes for an ideal testing environment to test ballistic weaponry.</description>
+   <bar>Every visitor to Onar is required to check in at the spaceport bar immediately after landing. Nobody is allowed off the premises of the spaceport without a good reason, and even then they will be accompanied by an official Dvaered chaperone. Most visitors therefore find themselves confined to the spaceport bar.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Missiles 2</item>
+   <item>Heavy Weapons 1</item>
+  </tech>
+ </asset>
+ <asset name="Onyx Shipyard">
+  <pos>
+   <x>-20041.450059</x>
+   <y>-3282.365686</y>
+  </pos>
+  <GFX>
+   <space>station-shipyard.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>10.000000</value>
+   <range>1</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>The Onyx Shipyard is a modern, high-tech shipyard. At least by Dvaered standards. The place builds both combat and trade vessels, and commissions a portion of the Dvaered fleet. Several Warlords also have personal contracts at Onyx, drawing ships for their private fleets from here.</description>
+   <bar>Each table in the spaceport bar is themed around a ship design that is manufactured here. Some are even built out of old or faulty components of the ships in question. Of course it's not very artistic, considering that a Dvaered came up with it, but there's still a certain class to it that gets potential buyers in the mood.</bar>
+  </general>
+  <tech>
+   <item>Heavy Civilian Combat Ships</item>
+   <item>Bulk Trade Ships</item>
+  </tech>
+ </asset>
+ <asset name="Opa">
+  <pos>
+   <x>-3548.243133</x>
+   <y>-3056.307753</y>
+  </pos>
+  <GFX>
+   <space>moon-G01.png</space>
+   <exterior>aquatic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Opal Station">
+  <pos>
+   <x>-1838.125142</x>
+   <y>11472.033093</y>
+  </pos>
+  <GFX>
+   <space>000.png</space>
+   <exterior>gas.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Frontier</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>1500</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+   </services>
+   <commodities>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Since Varaati is located in a rather isolated corner of the galaxy, the local government decided to invest in a trade station within the system, to attract more traffic. Though the station is a far cry from commercial powerhouses like Darkshed, Opal Station must be considered a good effort by Frontier standards.</description>
+   <bar>The spacedock bar is geared towards trading. There are private booths, tables with integrated data uplinks, a ship outfitting service and charts on the walls showing nearby trade opportunities. The place is never quite packed with people, but there is enough activity in the bar to indicate that Opal Station is slowly returning on its investment.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Orville Shipyard">
+  <pos>
+   <x>-8020.974940</x>
+   <y>-6034.193104</y>
+  </pos>
+  <GFX>
+   <space>station-shipyard.png</space>
+   <exterior>station04.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Orville Shipyard is a relatively modest ship building facility, though it is invaluable to Inios Station and Brandt Station, as most of their reinforcements come from here. The station relies on Mastodon Station for the ships' energy cores and weaponry, as Rhu is too far removed from Aesir to send the ships to be outfitted at Sirius Ordinance.</description>
+   <bar>Over the bar in this facility, there is a counter display that keeps track of the amount of ships that have been produced at Orville Shipyard since it was commissioned. Clearly, the people here at Rhu take pride in being able to contribute to the Sirian military effort.</bar>
+  </general>
+  <tech>
+   <item>Light Civilian Combat Ships</item>
+  </tech>
+ </asset>
+ <asset name="Overture I">
+  <pos>
+   <x>-5700.000000</x>
+   <y>-8160.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-H00.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Overture II">
+  <pos>
+   <x>2247.706032</x>
+   <y>9840.356839</y>
+  </pos>
+  <GFX>
+   <space>L00.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Overture III">
+  <pos>
+   <x>11880.000000</x>
+   <y>-7860.000000</y>
+  </pos>
+  <GFX>
+   <space>M02.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Ozogo X">
+  <pos>
+   <x>-15048.345885</x>
+   <y>-9824.157202</y>
+  </pos>
+  <GFX>
+   <space>J00.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>J</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P0125">
+  <pos>
+   <x>1295.028995</x>
+   <y>1003.839044</y>
+  </pos>
+  <GFX>
+   <space>D01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P2020">
+  <pos>
+   <x>-19460.000000</x>
+   <y>28280.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-I01.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P2021">
+  <pos>
+   <x>13370.000000</x>
+   <y>24640.000000</y>
+  </pos>
+  <GFX>
+   <space>G00.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P2022">
+  <pos>
+   <x>-2730.000000</x>
+   <y>-280.000000</y>
+  </pos>
+  <GFX>
+   <space>moon-C00.png</space>
+   <exterior>station03.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P9122">
+  <pos>
+   <x>-3147.844750</x>
+   <y>-2248.460535</y>
+  </pos>
+  <GFX>
+   <space>P03.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="P9234">
+  <pos>
+   <x>-6710.000000</x>
+   <y>715.000000</y>
+  </pos>
+  <GFX>
+   <space>H00.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Paxsor">
+  <pos>
+   <x>-1290.185819</x>
+   <y>9645.898630</y>
+  </pos>
+  <GFX>
+   <space>G01.png</space>
+   <exterior>mining6.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>G</class>
+   <population>65000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Paxsor is a mining planet within Empire space, supplying ore to the shipyards in the system and sending surplus ore to help with the Emperor's Fist project.</description>
+   <bar>The Paxsorian bar is a rather simple one, patronized mostly by traders trafficking ore. Given the limited nature of the planet's public facilities, it's impossible to know whether the Nexus employees are hard at work or drinking at a bar of their own.</bar>
+  </general>
+ </asset>
+ <asset name="Perhelion Alpha">
+  <pos>
+   <x>-2137.665534</x>
+   <y>-5766.200038</y>
+  </pos>
+  <GFX>
+   <space>moon-M03.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Perhelion Beta">
+  <pos>
+   <x>5109.740961</x>
+   <y>585.176343</y>
+  </pos>
+  <GFX>
+   <space>moon-M05.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Perhelion Gamma">
+  <pos>
+   <x>-5087.007787</x>
+   <y>3264.979223</y>
+  </pos>
+  <GFX>
+   <space>moon-J02.png</space>
+   <exterior>oceanic.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Petaat">
+  <pos>
+   <x>9405.612680</x>
+   <y>15098.052006</y>
+  </pos>
+  <GFX>
+   <space>S01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>S</class>
+   <population>50000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Medicine</commodity>
+   </commodities>
+   <description>Petaat can be called a civilian Dvaered world, if you're feeling nice. Fact is that people live here, and a Dvaered Warlord controls the local government. But that's about as far as it goes. Petaat is a very unpleasant world, its surface constantly plagued by dust storms and its soil unfit for crop growing. The people living here only do so because they don't have the means to leave.</description>
+   <bar>Amazingly, Petaat does have a spaceport bar, despite the fact that this is, well, Petaat. It's rather a dump, though. If you didn't know better you'd think yourself in a decaying slum. Most people here look like they belong in one, too.</bar>
+  </general>
+ </asset>
+ <asset name="Phee">
+  <pos>
+   <x>6915.504984</x>
+   <y>1693.555901</y>
+  </pos>
+  <GFX>
+   <space>K04.png</space>
+   <exterior>lava.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>K</class>
+   <population>500000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+   </commodities>
+   <description>Phee is a tad hot, but it's still habitable. The people who live here have to be healthy and robust to stand the environment, and that's the reason why Dvaered High Command likes to conscript new soldiers from this world. But rather than feel dissatisfied about this, the population takes pride in its history of military service. These people are true Dvaered.</description>
+   <bar>The owner of the bar has served in several Dvaered campaigns in his day, and it shows. The bar is decorated with trophies and other memorabilia from those days, and the man will tell anyone who will listen about what he calls his glory days.</bar>
+  </general>
+  <tech>
+   <item>Basic Civilian Ships</item>
+   <item>Basic Outfits 1</item>
+  </tech>
+ </asset>
+ <asset name="Pilatis I">
+  <pos>
+   <x>3356.933593</x>
+   <y>-9777.069091</y>
+  </pos>
+  <GFX>
+   <space>moon-A01.png</space>
+   <exterior>snow.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Pilatis II">
+  <pos>
+   <x>-2098.083495</x>
+   <y>6420.135498</y>
+  </pos>
+  <GFX>
+   <space>moon-M01.png</space>
+   <exterior>station00.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Pilatis III">
+  <pos>
+   <x>-7049.560549</x>
+   <y>-3650.665282</y>
+  </pos>
+  <GFX>
+   <space>moon-O00.png</space>
+   <exterior>desertic2.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Point Zero 0">
+  <pos>
+   <x>2700.000000</x>
+   <y>1980.000000</y>
+  </pos>
+  <GFX>
+   <space>D00.png</space>
+   <exterior>desertic4.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Point Zero Station">
+  <pos>
+   <x>2341.655181</x>
+   <y>1502.747132</y>
+  </pos>
+  <GFX>
+   <space>002.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Polaris Prime">
+  <pos>
+   <x>14797.406966</x>
+   <y>4825.680532</y>
+  </pos>
+  <GFX>
+   <space>002.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>300.000000</value>
+   <range>3</range>
+  </presence>
+  <general>
+   <class>1</class>
+   <population>318000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Medicine</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Luxury Goods</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Polaris Prime has recently become home to the Emperor himself as he plans and constructs his new stronghold on Emperor's Fist. It is an immense station with booming commerce, with a large loading area and frequent freight transfers between the station and Emperor's Fist below.</description>
+   <bar>Since you aren't allowed in the fancier bars you wander into the spaceport bar. A simple, utilitarian bar patronized largely by off-duty dock workers and terraformers, it is nonetheless kept immaculately clean. You can only imagine how luxurious the Emperor's personal bar must be.</bar>
+  </general>
+  <tech>
+   <item>Empire Military Ships</item>
+   <item>High Tech Upgrades 2</item>
+   <item>Heavy Weapons 2</item>
+  </tech>
+ </asset>
+ <asset name="Praxis">
+  <pos>
+   <x>-5844.907407</x>
+   <y>8169.259259</y>
+  </pos>
+  <GFX>
+   <space>M00.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>400000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Praxis is an anomaly in Dvaered culture, known for its commerce rather than production of materials. Beginning as a small colony, it has become increasingly important since the Incident. Praxis is now considered one of the core Dvaered worlds, the gateway through which Dvaered ore and materials flow into Empire space.</description>
+   <bar>While not nearly as pristine as many Empire bars, the Praxis bar is remarkably well-kept for a Dvaered bar.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Bulk Trade Ships</item>
+   <item>Basic Outfits 1</item>
+   <item>Basic Outfits 2</item>
+  </tech>
+ </asset>
+ <asset name="Protera Sigma">
+  <pos>
+   <x>0.000000</x>
+   <y>0.000000</y>
+  </pos>
+  <GFX>
+   <space>M05.png</space>
+   <exterior>oceanic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Proteron</faction>
+   <value>300.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>1200000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <missions/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+    <commodity>Medicine</commodity>
+   </commodities>
+   <description>Protera Sigma is the only Proteron colony known to have survived the Incident. One of the earlier Proteron settlements, it has an established shipyard and access to the original blueprints, so Proteron shipbuilding traditions live on.</description>
+   <bar>Rather distinct from traditional Empire bars, the Protera Sigma bar is entirely open and without seats, as the Proteron believe one should stand while eating and drinking. Despite this curiosity, their brews don't stray far from typical Empire faire.</bar>
+  </general>
+  <tech>
+   <item>Basic Outfits 2</item>
+   <item>Low Tech Upgrades</item>
+   <item>High Tech Upgrades 1</item>
+   <item>Missiles 2</item>
+   <item>Proteron Military Ships</item>
+  </tech>
+ </asset>
+ <asset name="Provectus Nova I">
+  <pos>
+   <x>-5688.034187</x>
+   <y>-2424.300604</y>
+  </pos>
+  <GFX>
+   <space>D01.png</space>
+   <exterior>station01.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Provectus Nova Ia">
+  <pos>
+   <x>-6064.192692</x>
+   <y>-2294.350136</y>
+  </pos>
+  <GFX>
+   <space>moon-O01.png</space>
+   <exterior>traderoom.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Pudas I">
+  <pos>
+   <x>-360.000000</x>
+   <y>-4920.000000</y>
+  </pos>
+  <GFX>
+   <space>J00.png</space>
+   <exterior>forest.png</exterior>
+  </GFX>
+  <presence>
+   <value>0.000000</value>
+   <range>0</range>
+  </presence>
+  <general>
+   <class>A</class>
+   <population>0</population>
+   <services/>
+   <commodities/>
+   <description>(null)</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Vino">
+  <pos>
+   <x>-24839.302216</x>
+   <y>-9566.085831</y>
+  </pos>
+  <GFX>
+   <space>M06.png</space>
+   <exterior>mining3.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>M</class>
+   <population>5500000000</population>
+   <services>
+    <land/>
+    <refuel/>
+    <bar/>
+    <commodity/>
+    <outfits/>
+    <shipyard/>
+   </services>
+   <commodities>
+    <commodity>Food</commodity>
+    <commodity>Ore</commodity>
+    <commodity>Industrial Goods</commodity>
+   </commodities>
+   <description>Though Vino is a good world for civilian habitation by most standards, the local government is rather distrustful of offworlders. It has made immigration procedures so arduous that the vast majority of potential newcomers gives up when they see the requirements. On the flipside, Vinoan citizens are loath to leave their world, be it temporarily or permanently. This makes Vino an isolated enclave, although trade is still at a decent level despite everything.</description>
+   <bar>Vino has a spaceport bar, but only because the government couldn't close it down without running into Empire-wide spaceport regulations. So although the place is open and functional, no effort has been spared to make the place as inhospitable and unpleasant as possible. Real seasoned traders have learned to ignore it, though.</bar>
+  </general>
+  <tech>
+   <item>Basic Trade Ships</item>
+   <item>Basic Outfits 1</item>
+   <item>Low Tech Upgrades</item>
+  </tech>
+ </asset>
+ <asset name="Violin Station">
+  <pos>
+   <x>8471.615119</x>
+   <y>17666.192451</y>
+  </pos>
+  <GFX>
+   <space>station-battlestation.png</space>
+   <exterior>aquatic2.png</exterior>
+  </GFX>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+  <general>
+   <class>0</class>
+   <population>2000</population>
+   <services>
+    <land/>
+    <refuel/>
+   </services>
+   <commodities/>
+   <description>Violin Station is one of the more important Sirian military outposts. With so much traffic coming through Churchill, extra security is called for. Violin Station also responds to disturbances in Eiderdown, when the Wringer is causing trouble again.</description>
+   <bar>(null)</bar>
+  </general>
+ </asset>
+ <asset name="Virtual Civilian Standard">
+  <virtual/>
+  <presence>
+   <faction>Civilian</faction>
+   <value>50.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Dvaered Small">
+  <virtual/>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Dvaered Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Dvaered</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Empire Small">
+  <virtual/>
+  <presence>
+   <faction>Empire</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Empire Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Empire</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual FLF Small">
+  <virtual/>
+  <presence>
+   <faction>FLF</faction>
+   <value>80.000000</value>
+   <range>1</range>
+  </presence>
+ </asset>
+ <asset name="Virtual FLF Unpresence">
+  <virtual/>
+  <presence>
+   <faction>FLF</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Frontier Small">
+  <virtual/>
+  <presence>
+   <faction>Frontier</faction>
+   <value>60.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Frontier Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Frontier</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Medium">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>150.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Small">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>100.000000</value>
+   <range>3</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Pirate Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Pirate</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Proteron Small">
+  <virtual/>
+  <presence>
+   <faction>Proteron</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Proteron Unpresence">
+  <virtual/>
+  <presence>
+   <faction>Proteron</faction>
+   <value>-1000.000000</value>
+   <range>0</range>
+  </presence>
+ </asset>
+ <asset name="Virtual Sirius Small">
+  <virtual/>
+  <presence>
+   <faction>Sirius</faction>
+   <value>100.000000</value>
+   <range>2</range>
+  </presence>
+ </asset>
+</Assets>
