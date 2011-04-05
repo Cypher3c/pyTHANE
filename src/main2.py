@@ -19,4 +19,6 @@ foo.readXML("test.xml")
 for k,v in sorted(foo.alist.iteritems()):
     print k
     print v.attrib
-    
+    print v.flag
+    print v.list
+       
