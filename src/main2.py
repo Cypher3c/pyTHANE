@@ -8,18 +8,20 @@ License: GPLv3
 import schema
 import pickle
 
-print "pyTHANE v0.0.4, pythonized THANE"
+print "pyTHANE v0.1.0, pythonized THANE"
 print ""
 print "by Cypher, licensed under GPLv3"
 
 foo = schema.AssetList()
 
-foo.readXML("test.xml")
+foo.readXML("test4.xml")
 foo.parseXML()
 
-for k,v in sorted(foo.alist.iteritems()):
-    print k
-    print v.attrib
-    print v.flag
-    print v.list
-       
+
+#Change Missions to true
+
+foo.alist["Adham"].flag["is_missions"] = True
+foo.alist["Adham"].flag["is_refuel"] = False
+foo.alist["Adham"].writeALLflagsX(foo.alist["Adham"].node)
+
+foo.writeXML("output.xml")

@@ -18,12 +18,11 @@ class AssetList(base.nxList):
         for elem in self.root.asset:
             temp_asset = Asset()
             a_name = elem.get("name") # get name, which is the key for dict
-            node = elem
+            temp_asset.node = elem
             temp_asset.getALLattributesX(elem)
             temp_asset.getALLflagsX(elem)
             temp_asset.getALLlistsX(elem)
             self.alist[a_name] = temp_asset
-            del temp_asset
 
 class CommodityList(base.nxList):
     
@@ -33,6 +32,7 @@ class CommodityList(base.nxList):
         for elem in self.root.asset:
             temp_commodity = Commodity()
             a_name = elem.get("name") # get name, which is the key for dict
+            temp_commodity.node = elem
             temp_commodity.getALLattributesX(elem)
             self.alist[a_name] = temp_commodity
             del temp_commodity
@@ -68,20 +68,20 @@ class Asset(base.nxObject):
                             "Description" : 'general/description',
                             "Bar_Description" : 'general/bar'}
         #set flags
-        self.flag = {"Is_land" : False,
-                     "Is_refuel" : False,
-                     "Is_bar" : False,
-                     "Is_missions" : False,
-                     "Is_commodity" : False,
-                     "Is_outfits" : False,
-                     "Is_shipyard" : False}
-        self.flagPaths = {"Is_land" : 'general/services/land',
-                     "Is_refuel" : 'general/services/refuel',
-                     "Is_bar" : 'general/services/bar',
-                     "Is_missions" : 'general/services/missions',
-                     "Is_commodity" : 'general/services/commodity',
-                     "Is_outfits" : 'general/services/outfits',
-                     "Is_shipyard" : 'general/services/shipyard'}
+        self.flag = {"is_land" : False,
+                     "is_refuel" : False,
+                     "is_bar" : False,
+                     "is_missions" : False,
+                     "is_commodities" : False,
+                     "is_outfits" : False,
+                     "is_shipyard" : False}
+        self.flagPaths = {"is_land" : 'general/services/land',
+                     "is_refuel" : 'general/services/refuel',
+                     "is_bar" : 'general/services/bar',
+                     "is_missions" : 'general/services/missions',
+                     "is_commodities" : 'general/services/commodity',
+                     "is_outfits" : 'general/services/outfits',
+                     "is_shipyard" : 'general/services/shipyard'}
         #set lists
         self.list = {"Commodities" : [],
                      "Tech" : []}

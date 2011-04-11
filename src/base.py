@@ -16,6 +16,10 @@ class nxList: #List of Naev xml-derived objects (see below)
         fileobject = open(_filename, "r") #read-only
         self.tree = objectify.parse(fileobject)
         self.root = self.tree.getroot()
+        
+    def writeXML(self, _filename):
+        fileobject = open(_filename,"w")
+        self.tree.write(fileobject, pretty_print=True)
 
 class nxObject: #Naev xml-derived object
     a_name = None
@@ -27,7 +31,7 @@ class nxObject: #Naev xml-derived object
     flagPaths = {} #corresponding Xpaths (Keys must be the same as in flag!!!)
     
     list = {} #dict of param lists :P
-    listPaths = {} #correspondign Xpaths (Keys must be the same as in flag!!!)
+    listPaths = {} #corresponding Xpaths (Keys must be the same as in flag!!!)
     
     misload = False
     
@@ -59,7 +63,7 @@ class nxObject: #Naev xml-derived object
         except AttributeError:
             self.flag[_flag] = False
             
-    def getlistX(self, root, x_path, _list, tag): 
+    def getlistX(self, root, x_path, _list): 
         '''Gets lists of params
         '''
         try:
@@ -92,23 +96,68 @@ class nxObject: #Naev xml-derived object
             
             
     #List of functions to save stuff back to xml trees
-    def setflagX(self, root, x_path, _flag): 
+    def writetag(self, _root, x_path, value, text = False): 
+        """
+        _root: lxml.etree.Element, the object being described
+        x_path: string like 'x/y/z', anything more complex is likely to break
+        value: false = delete node if exists, true = create if doesn't exist
+        text: the text to write, ignore if false
+        """        
+        nodes = _root.xpath(x_path)
+        if nodes:
+            node = nodes[0]
+        else: #try to create node
+            #split path into elements
+            parts = x_path.split('/')
+            p = _root
+            for part in parts:
+                nodes = p.xpath(part)
+                if not nodes:
+                    n = etree.XML("<%s/>" % part)
+                    p.append(n)
+                    p = n
+                else:
+                    p = nodes[0]
+            node = p
+        if value is False:
+            node.getparent().remove(node)
+        else:
+            if text:
+                node.text = str(value)
+    
+    def writetaglist(self, _root, xpath):       
+        pass
+    
+    def writeattributeX(self, _root, x_path, _attrib): 
+        ''' Writes attrib to tree with value in text
+        '''
+        if self.attrib[_attrib]: #if attribute has a value, write it
+            self.writetag(_root, self.attribPaths[_attrib], True, self.attrib[_attrib])
+        else: #otherwise, delete it
+            self.writetag(_root, self.attribPaths[_attrib], False)
+        
+    def writeflagX(self, _root, x_path, _flag): 
         ''' Writes flag to tree: deletes if false and already exists
         and adds if true but doesn't exist yet)
         '''
-        try:
-            if root.xpath(x_path):
-                if not self.flag[_flag]: 
-                    #delete value
-                    temp1 = root.xpath(x_path)
-                    temp1.getparent().remove(temp1)
-                    #yeah, pretty ugly
-        except AttributeError:
-            #element does not exist, so create it if true value is here
-            #first, see if parent tag of list items exists, create it if neccesary
-            #split xpath into leader and item
-            leader = x_path.rpartition("/")[0]
-            item = x_path.rpartition("/")[2]
-            
-           # if :
-           #     pass
+        self.writetag(_root, self.flagPaths[_flag], self.flag[_flag])
+    def writelistX(self, _root, x_path, _list): 
+        ''' writes list to tree; somewhat different in that it writes from
+        each item on the list in the dict, so it has its own writing routine
+        '''
+        pass #TODO
+       
+    def writeALLattributesX(self, _root):
+        '''
+        writes all attributes
+        '''
+        for k in self.attrib:
+          self.writeattributeX(_root, self.attribPaths[k], k)  
+    
+    def writeALLflagsX(self, _root):
+        '''
+        writes all flags
+        '''
+        for k in self.flag:
+          self.writeflagX(_root, self.flagPaths[k], k)  
+    
