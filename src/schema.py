@@ -22,7 +22,7 @@ class AssetList(base.nxList):
             temp_asset.getALLattributesX(elem)
             temp_asset.getALLflagsX(elem)
             temp_asset.getALLlistsX(elem)
-            self.alist[a_name] = temp_asset
+            self.list[a_name] = temp_asset
 
 class CommodityList(base.nxList):
     
@@ -34,7 +34,7 @@ class CommodityList(base.nxList):
             a_name = elem.get("name") # get name, which is the key for dict
             temp_commodity.node = elem
             temp_commodity.getALLattributesX(elem)
-            self.alist[a_name] = temp_commodity
+            self.list[a_name] = temp_commodity
             del temp_commodity
     
 
@@ -50,12 +50,12 @@ class Asset(base.nxObject):
                        "Space_GFX" : None, 
                        "Ext_GFX" : None,
                        "Faction" : None,
-                       "Faction_value" : None,
-                       "Faction_range" : None,
-                       "Class" : None,
-                       "Population" : None,
-                       "Description" : None,
-                       "Bar_Description" : None}
+                       "Faction_value" : "0.000000",
+                       "Faction_range" : "0",
+                       "Class" : "A",
+                       "Population" : "0",
+                       "Description" : "(null)",
+                       "Bar_Description" : "(null)"}
         self.attribPaths = {"X_pos" : 'pos/x',  
                             "Y_pos" : 'pos/y', 
                             "Space_GFX" : 'GFX/space', 

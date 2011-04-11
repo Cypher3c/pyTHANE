@@ -20,8 +20,8 @@ foo.parseXML()
 
 #Change Missions to true
 
-foo.alist["Adham"].flag["is_missions"] = True
-foo.alist["Adham"].flag["is_refuel"] = False
-foo.alist["Adham"].writeALLflagsX(foo.alist["Adham"].node)
+foo.list["Adham"].flag["is_missions"] = True
+foo.list["Adham"].flag["is_refuel"] = False
+foo.list["Adham"].writeALLflagsX(foo.list["Adham"].node)
 
 foo.writeXML("output.xml")

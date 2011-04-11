@@ -7,7 +7,7 @@ from lxml import etree
 from lxml import objectify
 
 class nxList: #List of Naev xml-derived objects (see below)
-    alist = {} #dict of assets
+    list = {} #dict of assets
     tree = None # XML tree
     root = None #root elem
     
@@ -20,6 +20,15 @@ class nxList: #List of Naev xml-derived objects (see below)
     def writeXML(self, _filename):
         fileobject = open(_filename,"w")
         self.tree.write(fileobject, pretty_print=True)
+        
+    def addobject(self, _name):
+        pass
+    
+    def renameobject(self, _oldname, _newname):
+        pass
+    
+    def copyobject(self, _origin, _target):
+        pass
 
 class nxObject: #Naev xml-derived object
     a_name = None
@@ -125,8 +134,27 @@ class nxObject: #Naev xml-derived object
             if text:
                 node.text = str(value)
     
-    def writetaglist(self, _root, xpath):       
-        pass
+    def writetaglist(self, _root, x_path, _list):       
+        '''
+        _list is the list to parse through
+        '''
+        parent_x_path = x_path.rpartition('/')[0]
+        
+        nodes = _root.xpath(parent_x_path)
+        if nodes:
+            node = nodes[0]
+        else:
+            parts = parent_x_path.split('/')
+            p = _root
+            for part in parts:
+                nodes = p.xpath(part)
+                if not nodes:
+                    n = etree.XML("<%s/>" % part)
+                    p.append(n)
+                    p = n
+                else:
+                    p = nodes[0]
+            node = p
     
     def writeattributeX(self, _root, x_path, _attrib): 
         ''' Writes attrib to tree with value in text
