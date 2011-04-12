@@ -14,7 +14,7 @@ print "by Cypher, licensed under GPLv3"
 
 foo = schema.AssetList()
 
-foo.readXML("test4.xml")
+foo.readXML("test.xml")
 foo.parseXML()
 
 
@@ -22,6 +22,8 @@ foo.parseXML()
 
 foo.list["Adham"].flag["is_missions"] = True
 foo.list["Adham"].flag["is_refuel"] = False
-foo.list["Adham"].writeALLflagsX(foo.list["Adham"].node)
+foo.list["Adham"].modified = True
+foo.list["Adham"].clear()
+foo.writeALLXML()
 
 foo.writeXML("output.xml")

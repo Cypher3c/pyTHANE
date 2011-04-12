@@ -11,6 +11,8 @@ class nxList: #List of Naev xml-derived objects (see below)
     tree = None # XML tree
     root = None #root elem
     
+    
+    
     def readXML(self, _filename):
         #Load file
         fileobject = open(_filename, "r") #read-only
@@ -20,6 +22,7 @@ class nxList: #List of Naev xml-derived objects (see below)
     def writeXML(self, _filename):
         fileobject = open(_filename,"w")
         self.tree.write(fileobject, pretty_print=True)
+    
         
     def addobject(self, _name):
         pass
@@ -29,7 +32,7 @@ class nxList: #List of Naev xml-derived objects (see below)
     
     def copyobject(self, _origin, _target):
         pass
-
+    
 class nxObject: #Naev xml-derived object
     a_name = None
     node = None #the node in the tree that the object was derived from
@@ -42,7 +45,21 @@ class nxObject: #Naev xml-derived object
     list = {} #dict of param lists :P
     listPaths = {} #corresponding Xpaths (Keys must be the same as in flag!!!)
     
+    x_attrib = []
+    #       0                   1         2      3
+    #[name of attribute, default value, xpath, type (attribute, flag, list)]
+    
     misload = False
+    
+    modified = False
+    
+    def clear(self):
+        '''
+        deletes all the child nodes of the object in quesion
+        Permits it to be rewritten
+        '''
+        for elem in self.node.iterchildren():
+            self.node.remove(elem)
     
     #List of functions to import values from xml trees 
     #and save them into dicts
@@ -103,77 +120,91 @@ class nxObject: #Naev xml-derived object
         for k in self.list:
             self.getlistX(_root, self.listPaths[k], k)
             
-            
+    def readattribute(self, _root, _index):
+        '''
+        read in attribute using root object and index of value in list
+        ''' 
+        if self.x_attrib[_index][3] == 'attrib':
+            try:
+                self.x_attrib[_index][1] = _root.xpath(self.x_attrib[_index][2])
+            except KeyError:
+                self.misload = True
+            except AttributeError:
+                pass 
+        elif self.x_attrib[_index][3] == 'flag':
+            try:
+                if _root.xpath(self.x_attrib[_index][2]):
+                    self.x_attrib[_index][1] = True
+            except KeyError:
+                self.misload = True
+            except AttributeError:
+                self.x_attrib[_index][1] = False 
+        elif self.x_attrib[_index][3] == 'list':
+            try:
+                if _root.xpath(self.x_attrib[_index][2]):
+                    temp_list_node = _root.xpath(self.x_attrib[_index][2])
+                    for item in temp_list_node:
+                        self.x_attrib[_index][1].append(item)
+            except KeyError:
+                self.misload = True
+            except AttributeError:
+                pass
+        
     #List of functions to save stuff back to xml trees
-    def writetag(self, _root, x_path, value, text = False): 
+    def writetag(self, _root, x_path, text = False): 
         """
         _root: lxml.etree.Element, the object being described
         x_path: string like 'x/y/z', anything more complex is likely to break
-        value: false = delete node if exists, true = create if doesn't exist
         text: the text to write, ignore if false
         """        
         nodes = _root.xpath(x_path)
-        if nodes:
-            node = nodes[0]
-        else: #try to create node
-            #split path into elements
-            parts = x_path.split('/')
-            p = _root
-            for part in parts:
-                nodes = p.xpath(part)
-                if not nodes:
-                    n = etree.XML("<%s/>" % part)
-                    p.append(n)
-                    p = n
-                else:
-                    p = nodes[0]
-            node = p
-        if value is False:
-            node.getparent().remove(node)
-        else:
-            if text:
-                node.text = str(value)
-    
-    def writetaglist(self, _root, x_path, _list):       
-        '''
-        _list is the list to parse through
-        '''
-        parent_x_path = x_path.rpartition('/')[0]
+        parts = x_path.split('/')
+        p = _root
+        for part in parts: # make sure elements do not already exist
+            nodes = p.xpath(part)
+            if not nodes:
+                n = etree.XML("<%s/>" % part)
+                p.append(n)
+                p = n
+            else:
+                p = nodes[0]
+        node = p
+        if text:
+            node.text = str(text)
         
-        nodes = _root.xpath(parent_x_path)
-        if nodes:
-            node = nodes[0]
-        else:
-            parts = parent_x_path.split('/')
-            p = _root
-            for part in parts:
-                nodes = p.xpath(part)
-                if not nodes:
-                    n = etree.XML("<%s/>" % part)
-                    p.append(n)
-                    p = n
-                else:
-                    p = nodes[0]
-            node = p
+        return node
     
     def writeattributeX(self, _root, x_path, _attrib): 
         ''' Writes attrib to tree with value in text
         '''
         if self.attrib[_attrib]: #if attribute has a value, write it
-            self.writetag(_root, self.attribPaths[_attrib], True, self.attrib[_attrib])
-        else: #otherwise, delete it
-            self.writetag(_root, self.attribPaths[_attrib], False)
+            self.writetag(_root, self.attribPaths[_attrib], self.attrib[_attrib])
         
     def writeflagX(self, _root, x_path, _flag): 
         ''' Writes flag to tree: deletes if false and already exists
         and adds if true but doesn't exist yet)
         '''
-        self.writetag(_root, self.flagPaths[_flag], self.flag[_flag])
+        if self.flag[_flag]:
+            self.writetag(_root, self.flagPaths[_flag])
+        
     def writelistX(self, _root, x_path, _list): 
         ''' writes list to tree; somewhat different in that it writes from
         each item on the list in the dict, so it has its own writing routine
         '''
-        pass #TODO
+        #get path of parent element
+        if len(self.list[_list]) > 0:
+            parent_x_path = self.listPaths[_list].rpartition('/')[0]
+            #get tag name
+            tag_name = self.listPaths[_list].rpartition('/')[2]
+            #make parent tag
+            node = self.writetag(_root, parent_x_path, tag_name)
+        
+            #now make each element
+            for item in self.list[_list]:
+                list_item = etree.XML("<%s/>" % tag_name)
+                node.append(list_item)
+                list_item.text = item
+            
        
     def writeALLattributesX(self, _root):
         '''
@@ -189,3 +220,6 @@ class nxObject: #Naev xml-derived object
         for k in self.flag:
           self.writeflagX(_root, self.flagPaths[k], k)  
     
+    def writeALLlistsX(self, _root):
+        for k in self.list:
+            self.writelistX(_root, self.listPaths[k], k)

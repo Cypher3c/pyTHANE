@@ -23,7 +23,15 @@ class AssetList(base.nxList):
             temp_asset.getALLflagsX(elem)
             temp_asset.getALLlistsX(elem)
             self.list[a_name] = temp_asset
-
+    
+    def writeALLXML(self):
+        for ob_name, ob in self.list.iteritems():
+            if ob.modified:
+                ob.clear()
+                ob.writeALLattributesX(ob.node)
+                ob.writeALLflagsX(ob.node)
+                ob.writeALLlistsX(ob.node)
+                
 class CommodityList(base.nxList):
     
     def parseXML(self):
@@ -88,6 +96,29 @@ class Asset(base.nxObject):
         self.listPaths = {"Commodities" : 'general/commodities/commodity',
                      "Tech" : 'tech/item'}
         
+        
+        self.x_attrib.append(["Is_virtual", False, 'virtual', 'flag'])
+        self.x_attrib.append(["X_pos", None, 'pos/x', 'attrib'])
+        self.x_attrib.append(["Y_pos", None, 'pos/y', 'attrib'])
+        self.x_attrib.append(["Space_GFX", None, 'GFX/space', 'attrib'])
+        self.x_attrib.append(["Ext_GFX", None, 'GFX/exterior', 'attrib'])
+        self.x_attrib.append(["Faction", None, 'presence/faction', 'attrib'])
+        self.x_attrib.append(["Faction_value", "0.000000", 'presence/value', 'attrib'])
+        self.x_attrib.append(["Faction_range", "0", 'presence/range', 'attrib'])
+        self.x_attrib.append(["Class", "A", 'general/class', 'attrib'])
+        self.x_attrib.append(["Population", "0", 'general/population', 'attrib'])
+        self.x_attrib.append(["Is_land", False, 'general/services/land', 'flag'])
+        self.x_attrib.append(["Is_refuel", False, 'general/services/refuel', 'flag'])
+        self.x_attrib.append(["Is_bar", False, 'general/services/bar', 'flag'])
+        self.x_attrib.append(["Is_missions", False, 'general/services/missions', 'flag'])
+        self.x_attrib.append(["Is_commodities", False, 'general/services/commodity', 'flag'])
+        self.x_attrib.append(["Is_outfits", False, 'general/services/outfits', 'flag'])
+        self.x_attrib.append(["Is_shipyard", False, 'general/services/shipyard', 'flag'])
+        self.x_attrib.append(["Commodities", [], 'general/commodities/commodity', 'list'])
+        self.x_attrib.append(["Description", "(null)", 'general/description', 'attrib'])
+        self.x_attrib.append(["Bar_description", "(null)", 'general/bar', 'attrib'])
+        self.x_attrib.append(["Tech", [], 'tech/item', 'list'])
+                                            
 class Commodity(base.nxObject):
     def __init__(self):
         #set variables

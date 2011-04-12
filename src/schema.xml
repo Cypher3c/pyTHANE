@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Schema>
 Eventually, will define schemas here, so I don't have to write as much code :P
-
+e
  <Assets>
   <Attribs>
-   <attrib name = "X_pos">pos/x</attrib>
-   <attrib name = "Y_pos">pos/y</attrib>
+   <attrib name = "Is_virtual" xpath = "virtual" type = "flag">False</attrib>
+   <attrib name = "X_pos" xpath = "pos/x" type = "attrib">None</attrib>
+   <attrib name = "Y_pos" xpath = "pos/y" type = "attrib">None</attrib>
+   <attrib name = "Space_GFX" xpath = "GFX/space" type = "attrib">None</attrib>
   </Attribs>
  </Assets>
+
 </Schema>
