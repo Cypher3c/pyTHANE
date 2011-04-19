@@ -6,6 +6,7 @@ License: GPLv3
 '''
 
 import schema
+from lxml import etree
 import pickle
 
 print "pyTHANE v0.1.0, pythonized THANE"
@@ -18,12 +19,13 @@ foo.readXML("test.xml")
 foo.parseXML()
 
 
-#Change Missions to true
-
-foo.list["Adham"].flag["is_missions"] = True
-foo.list["Adham"].flag["is_refuel"] = False
+#Change Missions to true for Adham
+foo.list["Adham"].attrib[foo.list["Adham"].find_item("Is_missions")][1] = True
+foo.list["Adham"].attrib[foo.list["Adham"].find_item("Is_refuel")][1] = False
 foo.list["Adham"].modified = True
-foo.list["Adham"].clear()
-foo.writeALLXML()
+foo.list["Anecu"].modified = True
+foo.writeXML()
 
-foo.writeXML("output.xml")
+print foo.list["Anecu"].attrib[foo.list["Adham"].find_item("Commodities")]
+
+foo.saveXML("output.xml")

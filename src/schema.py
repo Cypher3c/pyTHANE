@@ -11,117 +11,54 @@ from lxml import objectify
 
 class AssetList(base.nxList):
     
-    
     def parseXML(self):
         '''Parses the xml tree loaded
         '''
-        for elem in self.root.asset:
+        for elem in self.root:
             temp_asset = Asset()
-            a_name = elem.get("name") # get name, which is the key for dict
+            a_name = elem.get("name")
             temp_asset.node = elem
-            temp_asset.getALLattributesX(elem)
-            temp_asset.getALLflagsX(elem)
-            temp_asset.getALLlistsX(elem)
+            temp_asset.readALLattributes(elem)
             self.list[a_name] = temp_asset
     
-    def writeALLXML(self):
+    def writeXML(self):
         for ob_name, ob in self.list.iteritems():
             if ob.modified:
                 ob.clear()
-                ob.writeALLattributesX(ob.node)
-                ob.writeALLflagsX(ob.node)
-                ob.writeALLlistsX(ob.node)
+                ob.writeALLattributes(ob.node)
                 
 class CommodityList(base.nxList):
-    
-    def parseXML(self):
-        '''Parses the xml tree loaded
-        '''
-        for elem in self.root.asset:
-            temp_commodity = Commodity()
-            a_name = elem.get("name") # get name, which is the key for dict
-            temp_commodity.node = elem
-            temp_commodity.getALLattributesX(elem)
-            self.list[a_name] = temp_commodity
-            del temp_commodity
+    pass
     
 
 
-    
-    
 
 class Asset(base.nxObject):
     def __init__(self):
-        #set variables
-        self.attrib = {"X_pos" : None,  
-                       "Y_pos" : None, 
-                       "Space_GFX" : None, 
-                       "Ext_GFX" : None,
-                       "Faction" : None,
-                       "Faction_value" : "0.000000",
-                       "Faction_range" : "0",
-                       "Class" : "A",
-                       "Population" : "0",
-                       "Description" : "(null)",
-                       "Bar_Description" : "(null)"}
-        self.attribPaths = {"X_pos" : 'pos/x',  
-                            "Y_pos" : 'pos/y', 
-                            "Space_GFX" : 'GFX/space', 
-                            "Ext_GFX" : 'GFX/exterior',
-                            "Faction" : 'presence/faction',
-                            "Faction_value" : 'presence/value',
-                            "Faction_range" : 'presence/range',
-                            "Class" : 'general/class',
-                            "Population" : 'general/population',
-                            "Description" : 'general/description',
-                            "Bar_Description" : 'general/bar'}
-        #set flags
-        self.flag = {"is_land" : False,
-                     "is_refuel" : False,
-                     "is_bar" : False,
-                     "is_missions" : False,
-                     "is_commodities" : False,
-                     "is_outfits" : False,
-                     "is_shipyard" : False}
-        self.flagPaths = {"is_land" : 'general/services/land',
-                     "is_refuel" : 'general/services/refuel',
-                     "is_bar" : 'general/services/bar',
-                     "is_missions" : 'general/services/missions',
-                     "is_commodities" : 'general/services/commodity',
-                     "is_outfits" : 'general/services/outfits',
-                     "is_shipyard" : 'general/services/shipyard'}
-        #set lists
-        self.list = {"Commodities" : [],
-                     "Tech" : []}
-        self.listPaths = {"Commodities" : 'general/commodities/commodity',
-                     "Tech" : 'tech/item'}
-        
-        
-        self.x_attrib.append(["Is_virtual", False, 'virtual', 'flag'])
-        self.x_attrib.append(["X_pos", None, 'pos/x', 'attrib'])
-        self.x_attrib.append(["Y_pos", None, 'pos/y', 'attrib'])
-        self.x_attrib.append(["Space_GFX", None, 'GFX/space', 'attrib'])
-        self.x_attrib.append(["Ext_GFX", None, 'GFX/exterior', 'attrib'])
-        self.x_attrib.append(["Faction", None, 'presence/faction', 'attrib'])
-        self.x_attrib.append(["Faction_value", "0.000000", 'presence/value', 'attrib'])
-        self.x_attrib.append(["Faction_range", "0", 'presence/range', 'attrib'])
-        self.x_attrib.append(["Class", "A", 'general/class', 'attrib'])
-        self.x_attrib.append(["Population", "0", 'general/population', 'attrib'])
-        self.x_attrib.append(["Is_land", False, 'general/services/land', 'flag'])
-        self.x_attrib.append(["Is_refuel", False, 'general/services/refuel', 'flag'])
-        self.x_attrib.append(["Is_bar", False, 'general/services/bar', 'flag'])
-        self.x_attrib.append(["Is_missions", False, 'general/services/missions', 'flag'])
-        self.x_attrib.append(["Is_commodities", False, 'general/services/commodity', 'flag'])
-        self.x_attrib.append(["Is_outfits", False, 'general/services/outfits', 'flag'])
-        self.x_attrib.append(["Is_shipyard", False, 'general/services/shipyard', 'flag'])
-        self.x_attrib.append(["Commodities", [], 'general/commodities/commodity', 'list'])
-        self.x_attrib.append(["Description", "(null)", 'general/description', 'attrib'])
-        self.x_attrib.append(["Bar_description", "(null)", 'general/bar', 'attrib'])
-        self.x_attrib.append(["Tech", [], 'tech/item', 'list'])
+        #set variables 
+        type = "asset"       
+        self.attrib.append(["Is_virtual", False, 'virtual', 'flag'])
+        self.attrib.append(["X_pos", None, 'pos/x', 'attrib'])
+        self.attrib.append(["Y_pos", None, 'pos/y', 'attrib'])
+        self.attrib.append(["Space_GFX", None, 'GFX/space', 'attrib'])
+        self.attrib.append(["Ext_GFX", None, 'GFX/exterior', 'attrib'])
+        self.attrib.append(["Faction", None, 'presence/faction', 'attrib'])
+        self.attrib.append(["Faction_value", "0.000000", 'presence/value', 'attrib'])
+        self.attrib.append(["Faction_range", "0", 'presence/range', 'attrib'])
+        self.attrib.append(["Class", "A", 'general/class', 'attrib'])
+        self.attrib.append(["Population", "0", 'general/population', 'attrib'])
+        self.attrib.append(["Is_land", False, 'general/services/land', 'flag'])
+        self.attrib.append(["Is_refuel", False, 'general/services/refuel', 'flag'])
+        self.attrib.append(["Is_bar", False, 'general/services/bar', 'flag'])
+        self.attrib.append(["Is_missions", False, 'general/services/missions', 'flag'])
+        self.attrib.append(["Is_commodities", False, 'general/services/commodity', 'flag'])
+        self.attrib.append(["Is_outfits", False, 'general/services/outfits', 'flag'])
+        self.attrib.append(["Is_shipyard", False, 'general/services/shipyard', 'flag'])
+        self.attrib.append(["Commodities", [], 'general/commodities/commodity', 'list'])
+        self.attrib.append(["Description", "(null)", 'general/description', 'attrib'])
+        self.attrib.append(["Bar_description", "(null)", 'general/bar', 'attrib'])
+        self.attrib.append(["Tech", [], 'tech/item', 'list'])
                                             
 class Commodity(base.nxObject):
     def __init__(self):
-        #set variables
-        self.attrib = {"Description" : None,  
-                       "Price" : None}
-        
+        pass
