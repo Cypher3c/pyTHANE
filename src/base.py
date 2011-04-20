@@ -80,19 +80,16 @@ class nxObject: #Naev xml-derived object
             except AttributeError:
                 self.attrib[_index][1] = False 
         elif self.attrib[_index][3] == 'list':
-            #try:
-                #parent_x_path = self.attrib[_index][2].rpartition('/')[0]
+            try:
                 #get tag name
-                #tag_name = self.attrib[_index][2].rpartition('/')[2]
-                #if _root.xpath(parent_x_path):
-                    #temp_list_node = _root.xpath(parent_x_path)
-                    #for item in temp_list_node:
-                        #self.attrib[_index][1].append(item.text)
-            #except KeyError:
-                #self.misload = True
+                tag_name = self.attrib[_index][4]
+                _node = _root.xpath(self.attrib[_index][2])
+                for item in _node:
+                    self.attrib[_index][1].append(item.text)
+            except KeyError:
+                self.misload = True
             #except AttributeError:
-                #pass
-                pass
+               # print ("error in %s" % _index)
         
     def readALLattributes(self, _root):
         i = 0
@@ -136,19 +133,19 @@ class nxObject: #Naev xml-derived object
                 self.writetag(_root, self.attrib[_index][2])
                 
         elif self.attrib[_index][3] == 'list':
-            #if len(self.attrib[_index][1]) > 0:
-                #parent_x_path = self.attrib[_index][2].rpartition('/')[0]
+            #f len(self.attrib[_index][1]) > 0:
+                parent_x_path = self.attrib[_index][2].rpartition[/]
                 #get tag name
-                #tag_name = self.attrib[_index][2].rpartition('/')[2]
+                tag_name = self.attrib[_index][4]
                 #make parent tag
-                #node = self.writetag(_root, parent_x_path)
+                node = self.writetag(_root, parent_x_path)
             
                 #now make each element
-                #_list = self.attrib[_index][1]
-                #for item in _list:
-                    #list_item = etree.SubElement(node, tag_name)
-                    #node.append(list_item)
-                    #list_item.text = item
+                _list = self.attrib[_index][1]
+                for item in _list:
+                    list_item = etree.SubElement(node, tag_name)
+                    node.append(list_item)
+                    list_item.text = item
                 pass
     def writeALLattributes(self, _root): 
         i = 0 

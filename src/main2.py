@@ -15,17 +15,16 @@ print "by Cypher, licensed under GPLv3"
 
 foo = schema.AssetList()
 
-foo.readXML("test.xml")
+foo.readXML("test5.xml")
 foo.parseXML()
 
 
 #Change Missions to true for Adham
-foo.list["Adham"].attrib[foo.list["Adham"].find_item("Is_missions")][1] = True
-foo.list["Adham"].attrib[foo.list["Adham"].find_item("Is_refuel")][1] = False
-foo.list["Adham"].modified = True
+foo.list["Anecu"].attrib[foo.list["Anecu"].find_item("Is_missions")][1] = True
+foo.list["Anecu"].attrib[foo.list["Anecu"].find_item("Is_refuel")][1] = False
 foo.list["Anecu"].modified = True
 foo.writeXML()
 
-print foo.list["Anecu"].attrib[foo.list["Adham"].find_item("Commodities")]
+print foo.list["Anecu"].attrib[foo.list["Anecu"].find_item("Commodities")]
 
 foo.saveXML("output.xml")

@@ -54,10 +54,10 @@ class Asset(base.nxObject):
         self.attrib.append(["Is_commodities", False, 'general/services/commodity', 'flag'])
         self.attrib.append(["Is_outfits", False, 'general/services/outfits', 'flag'])
         self.attrib.append(["Is_shipyard", False, 'general/services/shipyard', 'flag'])
-        self.attrib.append(["Commodities", [], 'general/commodities/commodity', 'list'])
+        self.attrib.append(["Commodities", [], 'general/commodities/commodity', 'list', 'commodity'])
         self.attrib.append(["Description", "(null)", 'general/description', 'attrib'])
         self.attrib.append(["Bar_description", "(null)", 'general/bar', 'attrib'])
-        self.attrib.append(["Tech", [], 'tech/item', 'list'])
+        self.attrib.append(["Tech", [], 'tech/item', 'list', 'item'])
                                             
 class Commodity(base.nxObject):
     def __init__(self):
