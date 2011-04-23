@@ -7,26 +7,22 @@ License: GPLv3
 '''
 import base
 from lxml import etree
-from lxml import objectify
 
 class AssetList(base.nxList):
     
     def parseXML(self):
-        '''Parses the xml tree loaded
-        '''
-        for elem in self.root:
-            temp_asset = Asset()
-            a_name = elem.get("name")
-            temp_asset.node = elem
-            temp_asset.readALLattributes(elem)
-            self.list[a_name] = temp_asset
+        """Parses each asset (must be called after readXML)"""
+        
+        for asset_elem in self.root:
+            if asset_elem.tag == "asset":
+                temp_asset = Asset()
+                _name = asset_elem.get("name")
+                temp_asset.parse(asset_elem, _name)
+                self.list[_name] = temp_asset
     
     def writeXML(self):
-        for ob_name, ob in self.list.iteritems():
-            if ob.modified:
-                ob.clear()
-                ob.writeALLattributes(ob.node)
-                
+        pass
+    
 class CommodityList(base.nxList):
     pass
     
@@ -34,30 +30,79 @@ class CommodityList(base.nxList):
 
 
 class Asset(base.nxObject):
-    def __init__(self):
-        #set variables 
-        type = "asset"       
-        self.attrib.append(["Is_virtual", False, 'virtual', 'flag'])
-        self.attrib.append(["X_pos", None, 'pos/x', 'attrib'])
-        self.attrib.append(["Y_pos", None, 'pos/y', 'attrib'])
-        self.attrib.append(["Space_GFX", None, 'GFX/space', 'attrib'])
-        self.attrib.append(["Ext_GFX", None, 'GFX/exterior', 'attrib'])
-        self.attrib.append(["Faction", None, 'presence/faction', 'attrib'])
-        self.attrib.append(["Faction_value", "0.000000", 'presence/value', 'attrib'])
-        self.attrib.append(["Faction_range", "0", 'presence/range', 'attrib'])
-        self.attrib.append(["Class", "A", 'general/class', 'attrib'])
-        self.attrib.append(["Population", "0", 'general/population', 'attrib'])
-        self.attrib.append(["Is_land", False, 'general/services/land', 'flag'])
-        self.attrib.append(["Is_refuel", False, 'general/services/refuel', 'flag'])
-        self.attrib.append(["Is_bar", False, 'general/services/bar', 'flag'])
-        self.attrib.append(["Is_missions", False, 'general/services/missions', 'flag'])
-        self.attrib.append(["Is_commodities", False, 'general/services/commodity', 'flag'])
-        self.attrib.append(["Is_outfits", False, 'general/services/outfits', 'flag'])
-        self.attrib.append(["Is_shipyard", False, 'general/services/shipyard', 'flag'])
-        self.attrib.append(["Commodities", [], 'general/commodities/commodity', 'list', 'commodity'])
-        self.attrib.append(["Description", "(null)", 'general/description', 'attrib'])
-        self.attrib.append(["Bar_description", "(null)", 'general/bar', 'attrib'])
-        self.attrib.append(["Tech", [], 'tech/item', 'list', 'item'])
+    """An Asset (planet/station)"""
+    
+    #Variables
+    name = None
+    
+    virtual = False
+    
+    #Position
+    x_pos = None
+    y_pos = None
+    
+    #GFX
+    space_gfx = None
+    exterior_gfx = None
+    
+    #Presence
+    faction = None
+    value_faction = 0
+    range_faction = 0
+    
+    #General
+    asset_class = "A"
+    population = 0
+    
+    #Services
+    is_land = False
+    is_refuel = False
+    is_bar = False
+    is_missions = False
+    is_commodity = False
+    is_outfits = False
+    is_shipyard = False
+    
+    commodities = []
+    
+    description = "(null)"
+    bar_description = "(null)"
+    
+    tech = []
+    
+    #Parsing stuff
+    
+    def parse(self, _node, _name):
+        """Parse xml node and assign values to variables
+        _node: the node of the base object (i.e. <asset>)
+        _name: the name of the asset that is being parsed
+        
+        """
+        self.name = _name
+        for elem in _node:
+            if elem.tag == "virtual":
+                self.virtual = True
+                continue
+            elif elem.tag == "GFX":
+                for g_elem in elem:
+                    if g_elem.tag == "space":
+                        self.space_gfx = g_elem.text
+                    elif g_elem.tag == "exterior":
+                        self.exterior_gfx = g_elem.text
+            elif elem.tag == "pos":
+                for p_elem in elem:
+                    if p_elem.tag == "x":
+                        self.x_pos = p_elem.text
+                    if p_elem.tag == "y":
+                        self.y_pos = p_elem.text
+            elif elem.tag == "presence":
+                for pr_elem in elem:
+                    if pr_elem.tag == "faction":
+                        self.faction = pr_elem.text
+                    elif pr_elem.tag == "value":
+                        self.value_faction = pr_elem.text
+                    elif pr_elem.tag == "range":
+                        self.range_faction = pr_elem.text
                                             
 class Commodity(base.nxObject):
     def __init__(self):
