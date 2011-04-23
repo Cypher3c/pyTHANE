@@ -15,7 +15,7 @@ print "by Cypher, licensed under GPLv3"
 
 foo = schema.AssetList()
 
-foo.readXML("test5.xml")
+foo.readXML("test.xml")
 foo.parseXML()
 
 

@@ -84,7 +84,7 @@ class nxObject: #Naev xml-derived object
                 #get tag name
                 tag_name = self.attrib[_index][4]
                 _node = _root.xpath(self.attrib[_index][2])
-                for item in _node:
+                item.text for item in _node:
                     self.attrib[_index][1].append(item.text)
             except KeyError:
                 self.misload = True
@@ -133,8 +133,8 @@ class nxObject: #Naev xml-derived object
                 self.writetag(_root, self.attrib[_index][2])
                 
         elif self.attrib[_index][3] == 'list':
-            #f len(self.attrib[_index][1]) > 0:
-                parent_x_path = self.attrib[_index][2].rpartition[/]
+            if len(self.attrib[_index][1]) > 0:
+                parent_x_path = self.attrib[_index][2].rpartition('/')[0]
                 #get tag name
                 tag_name = self.attrib[_index][4]
                 #make parent tag
