@@ -14,9 +14,13 @@ print "by Cypher, licensed under GPLv3"
 
 foo = schema.AssetList()
 
-foo.readXML("test.xml")
+foo.readXML("asset.xml")
 foo.parseXML()
 
-print foo.list["Adham"].space_gfx
+adham_asset =  foo.list["Adham"]
 
-print foo.list["Adham"].x_pos
+print adham_asset.commodities
+
+foo.writeXML()
+
+foo.saveXML("output.xml")
