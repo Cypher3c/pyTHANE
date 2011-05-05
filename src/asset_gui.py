@@ -20,8 +20,11 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
        super(assetDialog, self).__init__(parent)
        self.setupUi(self)
        self.setWindowTitle("pyTHANE")
+       
+       #Set connections
        QtCore.QObject.connect(self.action_Open, QtCore.SIGNAL('triggered()'),
-                             self.open_file)
+                              self.open_file) 
+       self.assetList.currentTextChanged.connect(self.getAsset)
        #Define Asset List
        self.alist = schema.AssetList()
        
@@ -36,8 +39,15 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         
     def populateAssetList(self):
         for name in sorted(self.alist.list.keys()):
-            print name
             self.assetList.addItem(name)
+            
+    def getAsset(self, _name):
+        '''get the asset info into the form based on the selection from the list
+        _name: the text of the asset clicked
+        '''
+        #set the textboxes
+        self.nameBox.setText(_name)
+        self.descriptionBox.setText(self.alist.list[str(_name)].description)
     
 app = QtGui.QApplication(sys.argv)
 foo = assetDialog()
