@@ -59,14 +59,17 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
        #New asset
        self.newButton.clicked.connect(self.new_asset)
        
-       #set virtual
+       #Rename Asset
+       self.renameButton.clicked.connect(self.rename_Asset)
        
+       #Copy Asset
+       self.copyButton.clicked.connect(self.copyAsset)
+       
+       #set virtual
        self.virtualCheck.toggled.connect(self.set_virtual)
        
        
        #changed fields (the save button's status serves as a modified flag)
-    
-       self.nameBox.textChanged.connect(self.set_modified)
        self.descriptionBox.textChanged.connect(self.set_modified)
        self.bardescriptionBox.textChanged.connect(self.set_modified)
        self.virtualCheck.stateChanged.connect(self.set_modified)
@@ -94,13 +97,36 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         
         if not self.saveButton.isEnabled():
             self.saveButton.setEnabled(True)
+            
+    def clear(self):
+        '''Clear the form
+        '''
+        self.descriptionBox.clear()
+        self.bardescriptionBox.clear()
+        
+        self.virtualCheck.setChecked(False)
+        
+        self.landCheck.setChecked(False)
+        self.barCheck.setChecked(False)
+        self.refuelCheck.setChecked(False)
+        self.missionCheck.setChecked(False)
+        self.outfitCheck.setChecked(False)
+        self.commodityCheck.setChecked(False)
+        self.shipyardCheck.setChecked(False)
+        
     def select_asset(self, _name):
         self.getAsset(_name)
         
     def new_asset(self):
         '''Make a new asset, prompting for name
         '''
-        reply, ok = QtGui.QInputDialog.getText(self, 'New Asset', 'Please enter a name for the asset')
+        i = True
+        while i:
+            reply, ok = QtGui.QInputDialog.getText(self, 'New Asset', 'Please enter a name for the asset')
+            try:
+                check = self.assetList.findItems(reply, QtCore.Qt.MatchCaseSensitive)[0]
+            except IndexError:
+                i = False
         
         if ok and reply:
             #add new asset to dict
@@ -115,6 +141,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             self.assetList.scrollToItem(_item, QtGui.QAbstractItemView.PositionAtCenter)
             #select item
             self.assetList.setItemSelected(_item, True)
+            #clear form
+            self.clear()
             #load its params
             self.getAsset(reply)
             
@@ -155,10 +183,6 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         for name in sorted(self.alist.list.keys()):
             self.assetList.addItem(name)
             
-    def changeAssetName(self, _original, _new):
-        self.alist.copy(_original, _new)
-        #self.delAsset()
-            
     def getAsset(self, _name):
         '''get the asset info into the form based on the selection from the list
         _name: the text of the asset clicked
@@ -168,24 +192,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         
         name = str(_name)
         
-        
-        #Clear the form
-        self.nameBox.clear()
-        self.descriptionBox.clear()
-        self.bardescriptionBox.clear()
-        
-        self.virtualCheck.setChecked(False)
-        
-        self.landCheck.setChecked(False)
-        self.barCheck.setChecked(False)
-        self.refuelCheck.setChecked(False)
-        self.missionCheck.setChecked(False)
-        self.outfitCheck.setChecked(False)
-        self.commodityCheck.setChecked(False)
-        self.shipyardCheck.setChecked(False)
-        
-        #set nameBox
-        self.nameBox.setText(name)
+        #clear form
+        self.clear()
         
         #set virtualCheck, and, if checked, ignore the rest
         if self.alist.list[name].virtual:
@@ -209,9 +217,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.saveButton.setDisabled(True)
     def saveAsset(self):
         '''Changes the data for the asset
-        _name: name of the asset to set data for
         '''
-        #get name
         name = str(self.assetList.currentItem().text())
         if str(self.descriptionBox.toPlainText()):
             self.alist.list[name].description = str(self.descriptionBox.toPlainText())
@@ -227,13 +233,44 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.alist.list[name].is_bar = self.barCheck.isChecked()
         self.saveButton.setDisabled(True)
         
-    #def rename_Asset(self):
+    def rename_Asset(self):
+        '''Changes the name of the asset
+        '''
+        i = True
+        while i:
+            reply, ok = QtGui.QInputDialog.getText(self, 'Rename Asset', 'Please enter a name for the asset')
+            try:
+                check = self.assetList.findItems(reply, QtCore.Qt.MatchCaseSensitive)[0]
+            except IndexError:
+                i = False
+            if not ok:
+                i = False
+        if ok and reply:
+            #copy asset
+            self.alist.copy(str(self.assetList.currentItem().text()), str(reply))
+            #Delete old asset
+            del self.alist.list[str(self.assetList.currentItem().text())]
+            
+            #Add to list
+            self.assetList.addItem(reply)
+            #Remove old item
+            self.assetList.takeItem(self.assetList.currentRow())
+            #sort list
+            self.assetList.sortItems(QtCore.Qt.AscendingOrder)
+            #get item
+            _item = self.assetList.findItems(reply, QtCore.Qt.MatchCaseSensitive)[0]
+            #scroll to item
+            self.assetList.scrollToItem(_item, QtGui.QAbstractItemView.PositionAtCenter)
+            #select item
+            self.assetList.setItemSelected(_item, True)
+            #clear form
+            self.clear()
+            #load its params
+            self.getAsset(reply)
     
     def delAsset(self):
         ''' Deletes the currently selected asset from the asset list and the listbox
         '''
-        
-        
         name = str(self.assetList.currentItem().text())
 
         #remove listbox entry
@@ -241,11 +278,34 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         
         #delete from asset list
         del self.alist.list[name]
-     
-    def newAsset(self):
-        '''Make a new asset
-        '''
-        pass #TODO   
+        
+    def copyAsset(self):
+        i = True
+        while i:
+            reply, ok = QtGui.QInputDialog.getText(self, 'Copy Asset', 'Please enter a name for the new asset')
+            try:
+                check = self.assetList.findItems(reply, QtCore.Qt.MatchCaseSensitive)[0]
+            except IndexError:
+                i = False
+            if not ok:
+                i = False
+        if ok and reply:
+            #copy asset
+            self.alist.copy(str(self.assetList.currentItem().text()), str(reply))
+            #Add to list
+            self.assetList.addItem(reply)
+            #sort list
+            self.assetList.sortItems(QtCore.Qt.AscendingOrder)
+            #get item
+            _item = self.assetList.findItems(reply, QtCore.Qt.MatchCaseSensitive)[0]
+            #scroll to item
+            self.assetList.scrollToItem(_item, QtGui.QAbstractItemView.PositionAtCenter)
+            #select item
+            self.assetList.setItemSelected(_item, True)
+            #clear form
+            self.clear()
+            #load its params
+            self.getAsset(reply)
         
 app = QtGui.QApplication(sys.argv)
 foo = assetDialog()
