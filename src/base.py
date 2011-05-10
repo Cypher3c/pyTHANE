@@ -11,7 +11,7 @@ class nxList: #List of Naev xml-derived objects
     root = None #root elem
     type = None
     
-    
+    #XML stuff
     def readXML(self, _filename):
         '''Loads an XML file into a tree object.
         _filename: the xml file to load
@@ -28,9 +28,17 @@ class nxList: #List of Naev xml-derived objects
         '''
         fileobject = open(_filename,"w")
         fileobject.write(etree.tostring(self.tree, pretty_print=True))
+        
+    #Copy stuff
+    def copy(self, _source, _destination):
+        '''Copy an object in the list
+        _source: the name of the object to copy from
+        _destination the name of the copy to copy to
+        '''
+        self.list[_destination] = self.list[_source]
     
 class nxObject: #Naev xml-derived object
-    name = None
+    #name = None
     node = None #the node in the tree that the object was derived from
 
     misload = False

@@ -10,6 +10,7 @@ from lxml import etree
 
 class AssetList(base.nxList):
     
+    #XML functions
     def parseXML(self):
         """Parses each asset (must be called after readXML)"""
         
@@ -20,11 +21,31 @@ class AssetList(base.nxList):
                 temp_asset.parse(asset_elem, _name)
                 self.list[_name] = temp_asset
                 del temp_asset
+        #now delete root and tree
+        del self.root
+        del self.tree
     
     def writeXML(self):
-        for nam, ob in self.list.iteritems():
+        #make root element
+        self.root = etree.Element("Assets", author="TODO")
+        #get the tree
+        self.tree = self.root.getroottree()
+        for nam, ob in sorted(self.list.iteritems()):
+            #write main asset tag with name
+            ob.node = etree.SubElement(self.root, "asset")
+            ob.node.set("name", ob.name)
             a_node = ob
             a_node.write()
+            
+            
+    def new(self, _name):
+        '''Make a new asset, then add it to dict
+        _name: the name of the new asset
+        '''
+        _temp = Asset()
+        self.list[_name] = _temp
+        del _temp
+            
 class CommodityList(base.nxList):
     pass
     
@@ -146,12 +167,8 @@ _name: the name of the asset that is being parsed
                         self.tech.append(t_elem.text)
                         
     def write(self):
-        """Writes the asset back to the tree (overwrites existing)
-_node: the node (<asset>) to write to
-"""
-        #first, clear existing contents
-        self.node.clear() #note: this also deletes name attribute, so...
-        self.node.set("name", self.name) #re-write name, handy if changed
+        '''Writes the asset to the tree
+        '''
         #start building asset
         if self.virtual: #if virtual, just write virtual tag and presence info
             virt_tag = etree.SubElement(self.node, "virtual")
