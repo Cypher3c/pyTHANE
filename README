@@ -14,3 +14,5 @@ Python 2.6 or better
 lxml
 qt4
 pyqt4
+
+pyuic4 (only if you want to modify the .ui files with Qt Designer, this is needed to compile them into .py files)
