@@ -10,7 +10,7 @@ Currently, you can only edit the name, description, bar description, virtual sta
 
 Requirements:
 
-Python 2.7 or better (I am using 2.7, but I am guessing 2.6 would also work)
+Python 2.6 or better
 lxml
 qt4
 pyqt4
