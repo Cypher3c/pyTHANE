@@ -226,6 +226,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.alist.list[name].is_refuel = self.refuelCheck.isChecked()
         self.alist.list[name].is_bar = self.barCheck.isChecked()
         self.saveButton.setDisabled(True)
+        
+    #def rename_Asset(self):
     
     def delAsset(self):
         ''' Deletes the currently selected asset from the asset list and the listbox

@@ -1,0 +1,16 @@
+pyTHANE 0.5.0 - An Asset Editor For Naev
+by Cypher
+
+Licensed under GPLv3
+
+
+pyTHANE lets you graphically edit the asset.xml file in naev, adding new planets/stations and editing their parameters.
+
+Currently, you can only edit the name, description, bar description, virtual status (true/false), and services.
+
+Requirements:
+
+Python 2.7 or better (I am using 2.7, but I am guessing 2.6 would also work)
+lxml
+qt4
+pyqt4
