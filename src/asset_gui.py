@@ -25,7 +25,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     def __init__(self, parent=None):
        super(assetDialog, self).__init__(parent)
        self.setupUi(self)
-       self.setWindowTitle("pyTHANE 0.5.0 ")
+       self.setWindowTitle("pyTHANE 0.1.0 ")
        
        
         #Define Asset List
