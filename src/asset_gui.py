@@ -70,6 +70,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
        
        
        #changed fields (the save button's status serves as a modified flag)
+       self.populationBox.textChanged.connect(self.set_modified)
+       self.classBox.textChanged.connect(self.set_modified)
        self.descriptionBox.textChanged.connect(self.set_modified)
        self.bardescriptionBox.textChanged.connect(self.set_modified)
        self.virtualCheck.stateChanged.connect(self.set_modified)
@@ -84,6 +86,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
        ##
     
     def set_virtual(self, _bool):
+            self.populationBox.setDisabled(_bool)
+            self.classBox.setDisabled(_bool)
             self.descriptionBox.setDisabled(_bool)
             self.bardescriptionBox.setDisabled(_bool)
             self.landCheck.setDisabled(_bool)
@@ -101,8 +105,11 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     def clear(self):
         '''Clear the form
         '''
+        self.populationBox.clear()
+        self.classBox.clear()
         self.descriptionBox.clear()
         self.bardescriptionBox.clear()
+        
         
         self.virtualCheck.setChecked(False)
         
@@ -200,6 +207,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             self.virtualCheck.setChecked(True)
             self.set_virtual(True)
         else:
+            self.populationBox.setText(self.alist.list[name].population)
+            self.classBox.setText(self.alist.list[name].asset_class)
             if not self.alist.list[name].description == "(null)":
                 self.descriptionBox.setPlainText(self.alist.list[name].description)
             if not self.alist.list[name].bar_description == "(null)":
@@ -219,6 +228,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         '''Changes the data for the asset
         '''
         name = str(self.assetList.currentItem().text())
+        self.alist.list[name].population = str(self.populationBox.text())
+        self.alist.list[name].asset_class = str(self.classBox.text())
         if str(self.descriptionBox.toPlainText()):
             self.alist.list[name].description = str(self.descriptionBox.toPlainText())
         else:
@@ -307,6 +318,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             #load its params
             self.getAsset(reply)
         
+        def set_Naev_dir(self):
+            pass
 app = QtGui.QApplication(sys.argv)
 foo = assetDialog()
 foo.show()

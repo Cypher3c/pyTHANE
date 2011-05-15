@@ -16,3 +16,7 @@ qt4
 pyqt4
 
 pyuic4 (only if you want to modify the .ui files with Qt Designer, this is needed to compile them into .py files)
+
+For windows, you can get qt and pyqt by installing pyqt:
+
+PyQt-Py2.7-x86-gpl-4.8.4-1.exe (or 2.6 if you have that version of Python)
