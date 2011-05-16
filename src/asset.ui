@@ -415,10 +415,13 @@
     </layout>
    </widget>
    <widget class="QRadioButton" name="spaceRadio">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>310</y>
+      <y>520</y>
       <width>109</width>
       <height>22</height>
      </rect>
@@ -426,25 +429,28 @@
     <property name="text">
      <string>Space</string>
     </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QRadioButton" name="landingRadio">
+   <widget class="QRadioButton" name="exteriorRadio">
     <property name="geometry">
      <rect>
       <x>670</x>
-      <y>310</y>
+      <y>520</y>
       <width>109</width>
       <height>22</height>
      </rect>
     </property>
     <property name="text">
-     <string>Landing</string>
+     <string>Exterior</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
       <x>550</x>
-      <y>280</y>
+      <y>270</y>
       <width>259</width>
       <height>17</height>
      </rect>
@@ -462,16 +468,56 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QWidget" name="gridLayoutWidget_4">
+   <widget class="QWidget" name="gridLayoutWidget_5">
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>350</y>
-      <width>231</width>
-      <height>211</height>
+      <y>540</y>
+      <width>221</width>
+      <height>51</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_4"/>
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="2">
+      <widget class="QComboBox" name="gfxCombo">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Image:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="gfxLabel">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>300</y>
+      <width>229</width>
+      <height>209</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

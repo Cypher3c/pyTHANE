@@ -8,6 +8,8 @@ from PyQt4 import QtCore, QtGui
 import asset_dialog
 import schema
 import sys
+import os
+import ConfigParser
 
     
 class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
@@ -16,6 +18,12 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     currOpenFile = None
     assetWidgets = []
     saved_path = None
+    Naev_dir = None
+    conf_file = None
+    conf_parser = None
+    
+    space_gfx_list = []
+    exterior_gfx_list = []
     
     file_loaded = None #path to file loaded, or none if nothing loaded
     
@@ -23,68 +31,91 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     temp_asset_name = None #place to store current asset name
     
     def __init__(self, parent=None):
-       super(assetDialog, self).__init__(parent)
-       self.setupUi(self)
-       self.setWindowTitle("pyTHANE 0.1.0 ")
+        super(assetDialog, self).__init__(parent)
+        self.setupUi(self)
+        self.setWindowTitle("pyTHANE 0.1.1 ")
        
        
         #Define Asset List
-       self.alist = schema.AssetList()
+        self.alist = schema.AssetList()
        
-       #Define temp Asset
-       self.temp_asset = schema.Asset()
+        #Define temp Asset
+        self.temp_asset = schema.Asset()
        
-       ##Set connections
+        ##Set connections
        
-       #open file
-       QtCore.QObject.connect(self.action_Open, QtCore.SIGNAL('triggered()'),
+        #open file
+        QtCore.QObject.connect(self.action_Open, QtCore.SIGNAL('triggered()'),
                               self.open_file) 
        
-       #save file
-       self.action_Save.triggered.connect(self.save_file)
+        #save file
+        self.action_Save.triggered.connect(self.save_file)
        
-       #save as file
-       self.action_Save_as.triggered.connect(self.save_as_file)
+        #save as file
+        self.action_Save_as.triggered.connect(self.save_as_file)
        
-       #load asset info
+        #load asset info
        
-       self.assetList.currentTextChanged.connect(self.getAsset)
+        self.assetList.currentTextChanged.connect(self.getAsset)
        
-       #save asset
-       self.saveButton.clicked.connect(self.saveAsset)
+        #save asset
+        self.saveButton.clicked.connect(self.saveAsset)
        
-       #delete asset
-       self.deleteButton.clicked.connect(self.delAsset)
+        #delete asset
+        self.deleteButton.clicked.connect(self.delAsset)
        
-       #New asset
-       self.newButton.clicked.connect(self.new_asset)
+        #New asset
+        self.newButton.clicked.connect(self.new_asset)
        
-       #Rename Asset
-       self.renameButton.clicked.connect(self.rename_Asset)
+        #Rename Asset
+        self.renameButton.clicked.connect(self.rename_Asset)
        
-       #Copy Asset
-       self.copyButton.clicked.connect(self.copyAsset)
+        #Copy Asset
+        self.copyButton.clicked.connect(self.copyAsset)
        
-       #set virtual
-       self.virtualCheck.toggled.connect(self.set_virtual)
+        #set virtual
+        self.virtualCheck.toggled.connect(self.set_virtual)
+        
+        #set Naev dir
+        self.actionSet_Naev_Directory.triggered.connect(self.set_Naev_dir)
+        
+        #Space/exterior Graphics
+        self.spaceRadio.toggled.connect(self.load_GFX)
        
+        #changed fields (the save button's status serves as a modified flag)
+        self.populationBox.textChanged.connect(self.set_modified)
+        self.classBox.textChanged.connect(self.set_modified)
+        self.descriptionBox.textChanged.connect(self.set_modified)
+        self.bardescriptionBox.textChanged.connect(self.set_modified)
+        self.virtualCheck.stateChanged.connect(self.set_modified)
+        self.landCheck.stateChanged.connect(self.set_modified)
+        self.barCheck.stateChanged.connect(self.set_modified)
+        self.refuelCheck.stateChanged.connect(self.set_modified)
+        self.missionCheck.stateChanged.connect(self.set_modified)
+        self.outfitCheck.stateChanged.connect(self.set_modified)
+        self.commodityCheck.stateChanged.connect(self.set_modified)
+        self.shipyardCheck.stateChanged.connect(self.set_modified)
        
-       #changed fields (the save button's status serves as a modified flag)
-       self.populationBox.textChanged.connect(self.set_modified)
-       self.classBox.textChanged.connect(self.set_modified)
-       self.descriptionBox.textChanged.connect(self.set_modified)
-       self.bardescriptionBox.textChanged.connect(self.set_modified)
-       self.virtualCheck.stateChanged.connect(self.set_modified)
-       self.landCheck.stateChanged.connect(self.set_modified)
-       self.barCheck.stateChanged.connect(self.set_modified)
-       self.refuelCheck.stateChanged.connect(self.set_modified)
-       self.missionCheck.stateChanged.connect(self.set_modified)
-       self.outfitCheck.stateChanged.connect(self.set_modified)
-       self.commodityCheck.stateChanged.connect(self.set_modified)
-       self.shipyardCheck.stateChanged.connect(self.set_modified)
+        ##
        
-       ##
+        #Import naev dir location from conf file, if possible
+        #Load conf file
+        self.conf_file = open("asset.conf", "r")
+        self.conf_parser = ConfigParser.RawConfigParser()
+        self.conf_parser.readfp(self.conf_file)
+        if self.conf_parser.has_section("Options"):
+            if self.conf_parser.has_option("Options", "Naev_Directory"):
+                self.Naev_dir = self.conf_parser.get("Options", "Naev_Directory")
+                #Check if path exists
+                if not os.path.exists(self.Naev_dir):
+                    self.Naev_dir = None
+        
+        #set the space and exterior graphics lists
+        self.get_spaceGFX()
+        self.get_exteriorGFX()
     
+        self.load_GFX(True)
+        
     def set_virtual(self, _bool):
             self.populationBox.setDisabled(_bool)
             self.classBox.setDisabled(_bool)
@@ -318,9 +349,58 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             #load its params
             self.getAsset(reply)
         
-        def set_Naev_dir(self):
-            pass
+    def set_Naev_dir(self):
+        if self.Naev_dir:
+            reply = QtGui.QFileDialog.getExistingDirectory(parent=self, caption="Select Naev Directory", directory = self.Naev_dir)
+        else:
+            reply = QtGui.QFileDialog.getExistingDirectory(parent=self, caption="Select Naev Directory")
+        if reply:
+            self.Naev_dir = str(reply)
+            #write to config file
+            self.conf_file = open("asset.conf", "r+")
+            self.conf_parser.readfp(self.conf_file)
+            self.conf_parser.set("Options", "Naev_Directory", self.Naev_dir)
+            self.conf_parser.write(self.conf_file)
+    def alert_noNaevDir(self):
+            QtGui.QMessageBox.warning(self, "Naev Directory Not Set", "You must set the Naev directory \n before you can set that parameter.")
+    
+    def get_spaceGFX(self):
+        if self.Naev_dir:
+            #clear the list of space GFX
+            del self.space_gfx_list[:]
+            space_gfx_dir = self.Naev_dir + "/gfx/planet/space/"
+            spaceList = os.listdir(space_gfx_dir)
+            for fname in spaceList:
+                self.space_gfx_list.append(fname)
+    def get_exteriorGFX(self):
+        if self.Naev_dir:
+        #clear the list of exterior graphics
+            del self.exterior_gfx_list[:]
+            exterior_gfx_dir = self.Naev_dir + "/gfx/planet/exterior/"
+            extList = os.listdir(exterior_gfx_dir)
+            for fname in extList:
+                self.exterior_gfx_list.append(fname)
+            
+    def load_GFX(self, _bool):
+        '''Load the appropriate graphics into the combo box
+        _bool: checked/unchecked status of space radiobox
+        '''
+        #first, clear box
+        self.gfxCombo.clear()
+        #if Naev directory set:
+        if self.Naev_dir:
+            if _bool:
+            #populate gfx combo box with spaceGFX
+                for _item in sorted(self.space_gfx_list):
+                    self.gfxCombo.addItem(_item)
+            else:
+                for _item in sorted(self.exterior_gfx_list):
+                    self.gfxCombo.addItem(_item)
+        else:
+            self.gfxCombo.addItem("Set Naev Dir First")
+            
+    #def 
 app = QtGui.QApplication(sys.argv)
-foo = assetDialog()
-foo.show()
+asset_instance = assetDialog()
+asset_instance.show()
 sys.exit(app.exec_())
