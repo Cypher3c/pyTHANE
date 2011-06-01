@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'src/asset.ui'
 #
-# Created: Sun May 15 19:50:06 2011
-#      by: PyQt4 UI code generator 4.7.2
+# Created: Tue May 31 21:23:50 2011
+#      by: PyQt4 UI code generator 4.7.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -179,11 +179,12 @@ class Ui_MainWindow(object):
         self.populationBox.setObjectName("populationBox")
         self.gridLayout_3.addWidget(self.populationBox, 0, 1, 1, 1)
         self.spaceRadio = QtGui.QRadioButton(self.centralwidget)
-        self.spaceRadio.setEnabled(True)
+        self.spaceRadio.setEnabled(False)
         self.spaceRadio.setGeometry(QtCore.QRect(570, 520, 109, 22))
         self.spaceRadio.setChecked(True)
         self.spaceRadio.setObjectName("spaceRadio")
         self.exteriorRadio = QtGui.QRadioButton(self.centralwidget)
+        self.exteriorRadio.setEnabled(False)
         self.exteriorRadio.setGeometry(QtCore.QRect(670, 520, 109, 22))
         self.exteriorRadio.setObjectName("exteriorRadio")
         self.label_4 = QtGui.QLabel(self.centralwidget)
@@ -200,6 +201,7 @@ class Ui_MainWindow(object):
         self.gridLayout_5 = QtGui.QGridLayout(self.gridLayoutWidget_5)
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.gfxCombo = QtGui.QComboBox(self.gridLayoutWidget_5)
+        self.gfxCombo.setEnabled(False)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.MinimumExpanding, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -211,7 +213,7 @@ class Ui_MainWindow(object):
         self.label_5.setObjectName("label_5")
         self.gridLayout_5.addWidget(self.label_5, 0, 1, 1, 1)
         self.gfxLabel = QtGui.QLabel(self.centralwidget)
-        self.gfxLabel.setGeometry(QtCore.QRect(560, 300, 229, 209))
+        self.gfxLabel.setGeometry(QtCore.QRect(560, 300, 220, 220))
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.MinimumExpanding, QtGui.QSizePolicy.MinimumExpanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)

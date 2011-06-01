@@ -416,7 +416,7 @@
    </widget>
    <widget class="QRadioButton" name="spaceRadio">
     <property name="enabled">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -434,6 +434,9 @@
     </property>
    </widget>
    <widget class="QRadioButton" name="exteriorRadio">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -480,6 +483,9 @@
     <layout class="QGridLayout" name="gridLayout_5">
      <item row="0" column="2">
       <widget class="QComboBox" name="gfxCombo">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
          <horstretch>0</horstretch>
@@ -502,8 +508,8 @@
      <rect>
       <x>560</x>
       <y>300</y>
-      <width>229</width>
-      <height>209</height>
+      <width>220</width>
+      <height>220</height>
      </rect>
     </property>
     <property name="sizePolicy">

@@ -24,6 +24,9 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     
     space_gfx_list = []
     exterior_gfx_list = []
+    space_gfx_pic = None
+    exterior_gfx_pic = None
+    default_gfx_pic = None
     
     file_loaded = None #path to file loaded, or none if nothing loaded
     
@@ -33,7 +36,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     def __init__(self, parent=None):
         super(assetDialog, self).__init__(parent)
         self.setupUi(self)
-        self.setWindowTitle("pyTHANE 0.1.1 ")
+        self.setWindowTitle("pyTHANE 0.1.2 ")
        
        
         #Define Asset List
@@ -107,7 +110,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             if self.conf_parser.has_option("Options", "Naev_Directory"):
                 self.Naev_dir = self.conf_parser.get("Options", "Naev_Directory")
                 #Check if path exists
-                if not os.path.exists(self.Naev_dir):
+                if not os.path.exists((self.Naev_dir + "/gfx")):
                     self.Naev_dir = None
         
         #set the space and exterior graphics lists
@@ -115,6 +118,12 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.get_exteriorGFX()
     
         self.load_GFX(True)
+        
+        self.space_gfx_pic = QtGui.QPixmap()
+        self.exterior_gfx_pic = QtGui.QPixmap()
+        self.default_gfx_pic = QtGui.QPixmap()
+        self.default_gfx_pic.load("noimage.png")
+        self.gfxLabel.setPixmap(self.default_gfx_pic)
         
     def set_virtual(self, _bool):
             self.populationBox.setDisabled(_bool)
@@ -237,6 +246,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         if self.alist.list[name].virtual:
             self.virtualCheck.setChecked(True)
             self.set_virtual(True)
+            self.setImage(name)
         else:
             self.populationBox.setText(self.alist.list[name].population)
             self.classBox.setText(self.alist.list[name].asset_class)
@@ -252,9 +262,39 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             self.commodityCheck.setChecked(self.alist.list[name].is_commodity)
             self.outfitCheck.setChecked(self.alist.list[name].is_outfits)
             self.shipyardCheck.setChecked(self.alist.list[name].is_shipyard)
-        
+            self.setImage(name)
         #disable save button
         self.saveButton.setDisabled(True)
+    
+    def setGFXCombo(self, name):
+        #return index
+        if self.spaceRadio.isChecked:
+            if self.alist.list[name].space_gfx:
+                self.gfxCombo.setCurrentIndex(self.gfxCombo.findText(self.alist.list[name].space_gfx))
+            else:
+                self.gfxCombo.setCurrentIndex("0")
+        else:
+            if self.alist.list[name].exterior_gfx:
+                self.gfxCombo.setCurrentIndex(self.gfxCombo.findText(self.alist.list[name].exterior_gfx))
+            else:
+                self.gfxCombo.setCurrentIndex("0")
+        #return
+    def setImage(self, name):
+        if self.Naev_dir:
+            #set graphics
+            
+            if self.spaceRadio.isChecked:
+                if self.alist.list[name].space_gfx:
+                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/space/" + self.alist.list[name].space_gfx))
+                else:
+                    self.space_gfx_pic.load("noimage.png")
+            else:
+                if self.alist.list[name].exterior_gfx:
+                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/exterior/" + self.alist.list[name].exterior_gfx))
+                else:
+                    self.space_gfx_pic.load("noimage.png")
+            self.gfxLabel.setPixmap(self.space_gfx_pic.scaled(220, 220))
+            self.setGFXCombo(name)
     def saveAsset(self):
         '''Changes the data for the asset
         '''
@@ -391,9 +431,11 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         if self.Naev_dir:
             if _bool:
             #populate gfx combo box with spaceGFX
+                self.gfxCombo.addItem("Select Item")
                 for _item in sorted(self.space_gfx_list):
                     self.gfxCombo.addItem(_item)
             else:
+                self.gfxCombo.addItem("Select Item")
                 for _item in sorted(self.exterior_gfx_list):
                     self.gfxCombo.addItem(_item)
         else:
