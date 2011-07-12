@@ -275,11 +275,11 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         if self.alist.list[name].space_gfx:
             self.spaceCombo.setCurrentIndex(self.spaceCombo.findText(self.alist.list[name].space_gfx))
         else:
-            self.spaceCombo.setCurrentIndex("0")
+            self.spaceCombo.setCurrentIndex(0)
         if self.alist.list[name].exterior_gfx:
             self.exteriorCombo.setCurrentIndex(self.exteriorCombo.findText(self.alist.list[name].exterior_gfx))
         else:
-            self.exteriorCombo.setCurrentIndex("0")
+            self.exteriorCombo.setCurrentIndex(0)
         #return
     def setImage(self, name):
         if self.Naev_dir:
