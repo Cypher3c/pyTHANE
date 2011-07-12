@@ -36,7 +36,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
     def __init__(self, parent=None):
         super(assetDialog, self).__init__(parent)
         self.setupUi(self)
-        self.setWindowTitle("pyTHANE 0.1.2 ")
+        self.setWindowTitle("pyTHANE 0.1.3 ")
        
        
         #Define Asset List
@@ -79,11 +79,13 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         #set virtual
         self.virtualCheck.toggled.connect(self.set_virtual)
         
-        #set Naev dir
-        self.actionSet_Naev_Directory.triggered.connect(self.set_Naev_dir)
-        
         #Space/exterior Graphics
-        self.spaceRadio.toggled.connect(self.load_GFX)
+        self.spaceRadio.toggled.connect(self.pickGFXfromlist)
+        
+        #GFX Combo triggers
+        self.space_gfx_pic = QtGui.QPixmap() #have to define first
+        self.spaceCombo.currentIndexChanged.connect(self.setImage)
+        self.exteriorCombo.currentIndexChanged.connect(self.setImage)
        
         #changed fields (the save button's status serves as a modified flag)
         self.populationBox.textChanged.connect(self.set_modified)
@@ -98,6 +100,8 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.outfitCheck.stateChanged.connect(self.set_modified)
         self.commodityCheck.stateChanged.connect(self.set_modified)
         self.shipyardCheck.stateChanged.connect(self.set_modified)
+        self.spaceCombo.currentIndexChanged.connect(self.set_modified)
+        self.exteriorCombo.currentIndexChanged.connect(self.set_modified)
        
         ##
        
@@ -106,20 +110,18 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.conf_file = open("asset.conf", "r")
         self.conf_parser = ConfigParser.RawConfigParser()
         self.conf_parser.readfp(self.conf_file)
-        if self.conf_parser.has_section("Options"):
-            if self.conf_parser.has_option("Options", "Naev_Directory"):
-                self.Naev_dir = self.conf_parser.get("Options", "Naev_Directory")
-                #Check if path exists
-                if not os.path.exists((self.Naev_dir + "/gfx")):
-                    self.Naev_dir = None
+        if self.conf_parser.has_option("Options", "naev_directory"):
+            self.Naev_dir = self.conf_parser.get("Options", "naev_directory")
+            #Check if path exists
+            if not os.path.exists((self.Naev_dir + "/gfx")):
+                self.Naev_dir = None
         
         #set the space and exterior graphics lists
         self.get_spaceGFX()
         self.get_exteriorGFX()
     
-        self.load_GFX(True)
+        self.load_GFX()
         
-        self.space_gfx_pic = QtGui.QPixmap()
         self.exterior_gfx_pic = QtGui.QPixmap()
         self.default_gfx_pic = QtGui.QPixmap()
         self.default_gfx_pic.load("noimage.png")
@@ -246,6 +248,7 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         if self.alist.list[name].virtual:
             self.virtualCheck.setChecked(True)
             self.set_virtual(True)
+            self.setGFXCombo(name)
             self.setImage(name)
         else:
             self.populationBox.setText(self.alist.list[name].population)
@@ -262,39 +265,36 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             self.commodityCheck.setChecked(self.alist.list[name].is_commodity)
             self.outfitCheck.setChecked(self.alist.list[name].is_outfits)
             self.shipyardCheck.setChecked(self.alist.list[name].is_shipyard)
+            self.setGFXCombo(name)
             self.setImage(name)
         #disable save button
         self.saveButton.setDisabled(True)
     
     def setGFXCombo(self, name):
         #return index
-        if self.spaceRadio.isChecked:
-            if self.alist.list[name].space_gfx:
-                self.gfxCombo.setCurrentIndex(self.gfxCombo.findText(self.alist.list[name].space_gfx))
-            else:
-                self.gfxCombo.setCurrentIndex("0")
+        if self.alist.list[name].space_gfx:
+            self.spaceCombo.setCurrentIndex(self.spaceCombo.findText(self.alist.list[name].space_gfx))
         else:
-            if self.alist.list[name].exterior_gfx:
-                self.gfxCombo.setCurrentIndex(self.gfxCombo.findText(self.alist.list[name].exterior_gfx))
-            else:
-                self.gfxCombo.setCurrentIndex("0")
+            self.spaceCombo.setCurrentIndex("0")
+        if self.alist.list[name].exterior_gfx:
+            self.exteriorCombo.setCurrentIndex(self.exteriorCombo.findText(self.alist.list[name].exterior_gfx))
+        else:
+            self.exteriorCombo.setCurrentIndex("0")
         #return
     def setImage(self, name):
         if self.Naev_dir:
             #set graphics
-            
-            if self.spaceRadio.isChecked:
-                if self.alist.list[name].space_gfx:
-                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/space/" + self.alist.list[name].space_gfx))
+            if self.spaceRadio.isChecked():
+                if self.spaceCombo.currentIndex():
+                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/space/" + self.spaceCombo.currentText()))
                 else:
                     self.space_gfx_pic.load("noimage.png")
             else:
-                if self.alist.list[name].exterior_gfx:
-                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/exterior/" + self.alist.list[name].exterior_gfx))
+                if self.exteriorCombo.currentIndex():
+                    self.space_gfx_pic.load((self.Naev_dir + "/gfx/planet/exterior/" + self.exteriorCombo.currentText()))
                 else:
                     self.space_gfx_pic.load("noimage.png")
             self.gfxLabel.setPixmap(self.space_gfx_pic.scaled(220, 220))
-            self.setGFXCombo(name)
     def saveAsset(self):
         '''Changes the data for the asset
         '''
@@ -313,6 +313,15 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
         self.alist.list[name].is_land = self.landCheck.isChecked()
         self.alist.list[name].is_refuel = self.refuelCheck.isChecked()
         self.alist.list[name].is_bar = self.barCheck.isChecked()
+        if self.spaceCombo.currentIndex():
+            self.alist.list[name].space_gfx = str(self.spaceCombo.currentText())
+        else:
+            self.alist.list[name].space_gfx = None
+        if self.exteriorCombo.currentIndex():
+            self.alist.list[name].exterior_gfx = str(self.exteriorCombo.currentText())
+        else:
+            self.alist.list[name].exterior_gfx = None
+            
         self.saveButton.setDisabled(True)
         
     def rename_Asset(self):
@@ -389,18 +398,6 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             #load its params
             self.getAsset(reply)
         
-    def set_Naev_dir(self):
-        if self.Naev_dir:
-            reply = QtGui.QFileDialog.getExistingDirectory(parent=self, caption="Select Naev Directory", directory = self.Naev_dir)
-        else:
-            reply = QtGui.QFileDialog.getExistingDirectory(parent=self, caption="Select Naev Directory")
-        if reply:
-            self.Naev_dir = str(reply)
-            #write to config file
-            self.conf_file = open("asset.conf", "r+")
-            self.conf_parser.readfp(self.conf_file)
-            self.conf_parser.set("Options", "Naev_Directory", self.Naev_dir)
-            self.conf_parser.write(self.conf_file)
     def alert_noNaevDir(self):
             QtGui.QMessageBox.warning(self, "Naev Directory Not Set", "You must set the Naev directory \n before you can set that parameter.")
     
@@ -421,27 +418,32 @@ class assetDialog(QtGui.QMainWindow, asset_dialog.Ui_MainWindow):
             for fname in extList:
                 self.exterior_gfx_list.append(fname)
             
-    def load_GFX(self, _bool):
-        '''Load the appropriate graphics into the combo box
-        _bool: checked/unchecked status of space radiobox
+    def load_GFX(self):
+        '''Load the graphics filenames into the combo boxes
         '''
-        #first, clear box
-        self.gfxCombo.clear()
+        #first, clear boxes
+        self.spaceCombo.clear()
+        self.exteriorCombo.clear()
         #if Naev directory set:
         if self.Naev_dir:
-            if _bool:
-            #populate gfx combo box with spaceGFX
-                self.gfxCombo.addItem("Select Item")
-                for _item in sorted(self.space_gfx_list):
-                    self.gfxCombo.addItem(_item)
-            else:
-                self.gfxCombo.addItem("Select Item")
-                for _item in sorted(self.exterior_gfx_list):
-                    self.gfxCombo.addItem(_item)
+            self.spaceCombo.addItem("Select Item")
+            for _sitem in sorted(self.space_gfx_list):
+                self.spaceCombo.addItem(_sitem)
+            self.exteriorCombo.addItem("Select Item")
+            for _eitem in sorted(self.exterior_gfx_list):
+                self.exteriorCombo.addItem(_eitem)
         else:
-            self.gfxCombo.addItem("Set Naev Dir First")
-            
-    #def 
+            self.spaceCombo.addItem("Set Naev Dir First")
+            self.exteriorCombo.addItem("Set Naev Dir First")
+    
+    def pickGFXfromlist(self):
+        if self.assetList.currentItem():
+            name = str(self.assetList.currentItem().text())
+            if self.spaceRadio.isChecked():
+                self.setImage(self.alist.list[name].space_gfx)
+            else:
+                self.setImage(self.alist.list[name].exterior_gfx)
+
 app = QtGui.QApplication(sys.argv)
 asset_instance = assetDialog()
 asset_instance.show()
