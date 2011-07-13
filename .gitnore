@@ -1,3 +1,4 @@
 #Ignore .pyc files
 /*.pyc
 /src/*.pyc
+/src/asset.conf

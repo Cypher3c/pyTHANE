@@ -6,7 +6,7 @@ Licensed under GPLv3
 
 pyTHANE lets you graphically edit the asset.xml file in naev, adding new planets/stations and editing their parameters.
 
-Currently, you can only edit the name, description, bar description, virtual status (true/false), and services.
+Currently, you can edit the name, description, bar description, virtual status (true/false), services, and landing/exterior pictures.
 
 Requirements:
 
